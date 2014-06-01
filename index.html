@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <meta charset="utf-8">
+   <title>Dandelion Project</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="web, component, library, assets, datatables, java, javaee, framework, webjars, thymeleaf, jsp, taglib">
+   <meta name="author" content="Dandelion">
+   
+   <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
+   <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
+   <link href="/assets/css/prettify.css" rel="stylesheet">
+   <!--[if lt IE 9]>
+   <script src="/assets/js/html5shiv.js"></script>
+   <![endif]-->
+   
+   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/images/dandelion_square.png">
+   <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/images/dandelion_square.png">
+   <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/images/dandelion_square.png">
+   <link rel="apple-touch-icon-precomposed" href="/assets/images/dandelion_square.png">
+   <link rel="shortcut icon" href="/assets/images/dandelion_square.png">
+   
+   <link href="/assets/css/site-main.css" rel="stylesheet">
+   
+   <script>
+   var _gaq = _gaq || [];
+   _gaq.push([ '_setAccount', 'UA-33818546-8' ]);
+   _gaq.push([ '_setCookiePath', '/' ]);
+   _gaq.push([ '_trackPageview' ]);
+   (function() {
+      var ga = document.createElement('script');
+      ga.type = 'text/javascript';
+      ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(ga, s);
+   })();
+   </script>
+
+   <link href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.0.0/animate.min.css" rel="stylesheet">
+   <link href="/assets/css/jquery.wordrotator.min.css" rel="stylesheet">
+   <link href="/assets/css/site-main.css" rel="stylesheet">
+   <link href="/assets/css/site-home.css" rel="stylesheet">
+      
+   <meta name="twitter:card" content="summary">
+   <meta name="twitter:site" content="@dandelion_proj">
+   <meta name="twitter:creator" content="@dandelion_proj">
+   <meta name="twitter:url" content="http://dandelion.github.com">
+   <meta name="twitter:title" content="Dandelion Project">
+   <meta name="twitter:description" content="Extensible web framework making web development simpler">
+   <meta name="twitter:image" content="http://dandelion.github.com/dandelion_square.png">
+</head>
+
+<body>
+   <a href="https://github.com/dandelion" class="hidden-phone">
+      <img style="position: absolute; top: 0; left: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_left_green_007200.png" alt="Fork me on GitHub">
+   </a>
+   
+   <div class="container-fluid dandelion-jumbotron">
+      <div class="container">
+         <div class="row">
+            <div class="span7 text-center">
+               <p>
+                  <img src="/assets/images/logo-dandelion_02-blanc.png" width="600px" height="300px"
+                     alt="Dandelion">
+               </p>
+            </div>
+            <div class="span5 text-left" style="padding-top:40px;">
+               <h2>Extensible web framework making web development</h2>
+               <p>
+                  <span style="font-size:31.5px; font-weight: bold;" id="words"></span>
+               </p>
+               <p style="margin-top: 20px;">
+                  <a href="/get-started" class="btn btn-warning btn-large"
+                     style="margin: 10px 0 10px">Get started »</a>
+               </p>
+            </div>
+         </div>
+         <div class="row">
+            <div class="span12">
+               <blockquote>
+                  <p>
+                     <strong>Dandelion</strong> is a free and Open
+                     Source Java framework aimed at making web
+                     development simpler in JVM-based environments.
+                  </p>
+                  <p>It helps to manipulate the web assets (JS, CSS)
+                     in many ways: good organization and classical
+                     optimizations like minification, merging,
+                     compression or caching. It also facilitates the
+                     integration of powerful JavaScript libraries thanks
+                     to a set of extensible components.
+                  <p>
+               </blockquote>
+            </div>
+         </div>
+      </div>
+   </div>
+   
+   <div class="container-fluid area-share"> 
+      <div class="row-fluid">
+         <div class="span12">
+            <p class="addthis_toolbox addthis_default_style text-center">
+               <a class="addthis_button_twitter_follow_native" tw:screen_name="dandelion_proj"></a>
+               <a class="addthis_button_tweet"></a> 
+               <a class="addthis_button_google_plusone" g:plusone:size="medium"></a> 
+               <a class="addthis_counter addthis_pill_style"></a>
+            </p>
+         </div>
+      </div>
+   </div>
+      
+   <div class="container-fluid area-features">
+      <div class="container">
+         <div class="row">
+            <div class="span4">
+               <h4><i class="fa fa-sitemap fa-2x"></i>&nbsp;&nbsp;Assets organization</h4>
+               <p>
+                  <strong>Dandelion</strong> proposes to organize your
+                  web assets into <a
+                     href="/dandelion/features/asset-bundles/introducing-asset-bundles.html">bundles</a>
+                  that can be joined together into a <a
+                     href="/dandelion/features/asset-bundles/building-a-bundle-graph/">graph</a>.
+                  You can then <a
+                     href="/dandelion/features/asset-bundles/interacting-with-the-asset-bundles/">interact</a>
+                  with this graph in multiple ways...
+               </p>
+            </div>
+            <div class="span4">
+               <h4><i class="fa fa-bolt fa-2x"></i>&nbsp;&nbsp;Assets optimization</h4>
+               <p>
+                  Apply the best practices of web development without (great) effort! Web assets can be
+                  minified and optimally injected into web pages thereby improving load
+                  times. Support for asset merging will be added soon.
+               </p>
+            </div>
+            <div class="span4">
+               <h4><i class="fa fa-cloud-download fa-2x"></i>&nbsp;&nbsp;Multiple locations</h4>
+               <p>
+                  Assets can be collected from <a
+                     href="/dandelion/features/asset-locators/introducing-asset-locators.html">multiple
+                     locations</a> before using them: webapp, classpath, <a
+                     href="http://en.wikipedia.org/wiki/Content_delivery_network">CDN</a>s,
+                  JARs or <a href="http://www.webjars.org/">WebJars</a>.
+                  <strong>Dandelion</strong> also support <a
+                     href="/dandelion/features/asset-location-wrappers/built-in/delegated-location-wrapper.html">dynamically
+                     generated assets</a>!
+               </p>
+            </div>
+         </div>
+         <div class="row">
+            <div class="span4">
+               <h4><i class="fa fa-code fa-2x"></i>&nbsp;&nbsp;Template engine integration</h4>
+               <p>
+                  <strong>Dandelion</strong> and its components all provide a
+                  <a href="/dandelion/docs/ref/jsp/">JSP taglib</a>. And if you're cool people who
+                  use cool technologies, we also provide support for
+                  <a href="/dandelion/docs/ref/thymeleaf/">Thymeleaf</a>!
+               </p>
+            </div>
+            <div class="span4">
+               <h4><i class="fa fa-puzzle-piece fa-2x"></i>&nbsp;&nbsp;Ready-to-use components</h4>
+               <p>
+                  The most advanced component is
+                  <a href="/datatables">Dandelion-Datatables</a> which allows you to create awesome HTML tables
+                  using <a
+                     href="http://datatables.net/">DataTables</a>. Other components are also
+                  incubating...
+               </p>
+            </div>
+            <div class="span4">
+               <h4><i class="fa fa-plus fa-2x"></i>&nbsp;&nbsp;Easily extensible</h4>
+               <p><strong>Dandelion</strong> is being developed while keeping in mind
+                  high extensibility and the ease of use. That's why
+                  almost all features contains extension points, for an
+                  easier integration in your own projects.</p>
+            </div>
+         </div>
+      </div>
+   </div>
+   
+   <div class="container-fluid area-social">  
+      <div class="container">
+         <div class="row">
+            <div class="span6" style="overflow:hidden; ">
+               <h3 class="section-title"><i class="fa fa-rss"></i> Latest news</h3>
+               <ul>
+               
+                  <li>
+                     <p>
+                        <a href="/blog/2014/05/25/dandelion-0.10.0-release">Dandelion 0.10.0 Release</a>
+                        <br />
+                        <span style="color:#8e8e8e;">2014/05/25</span>
+                     </p>
+                     <p>
+                        After several months of hibernation, I'm happy to announce the... Release of Dandelion v0.10.0! Past and present Until this release,...
+                     </p>
+                  </li>
+               
+                  <li>
+                     <p>
+                        <a href="/blog/2013/11/25/dandelion-datatables-0.9.3-release">Dandelion Datatables 0.9.3 Release</a>
+                        <br />
+                        <span style="color:#8e8e8e;">2013/11/25</span>
+                     </p>
+                     <p>
+                        Dandelion-Datatables v0.9.3 has been released! The main thing in this release is the support for Thymeleaf 2.1.x. You can now...
+                     </p>
+                  </li>
+               
+                  <li>
+                     <p>
+                        <a href="/blog/2013/10/03/dandelion-datatables-0.9.2-release">Dandelion Datatables 0.9.2 Release</a>
+                        <br />
+                        <span style="color:#8e8e8e;">2013/10/03</span>
+                     </p>
+                     <p>
+                        Dandelion-Datatables v0.9.2 has been released in Maven Central! This is mainly a bugfixing version. You can see the full changelog...
+                     </p>
+                  </li>
+               
+                  <li>
+                     <p>
+                        <a href="/blog/2013/09/12/dandelion-datatables-0.9.1-release">Dandelion Datatables 0.9.1 Release</a>
+                        <br />
+                        <span style="color:#8e8e8e;">2013/09/12</span>
+                     </p>
+                     <p>
+                        Dandelion-Datatables v0.9.1 has been released in Maven Central! This version in mainly focused on the i18n feature. You can see...
+                     </p>
+                  </li>
+               
+               </ul>
+            </div>
+            <div class="span6 hidden-phone">
+               <h3 class="section-title"><i class="fa fa-twitter"></i> Social</h3>
+               <div>
+                  <a class="twitter-timeline" height="400" href="https://twitter.com/dandelion_proj" data-widget-id="306779829204828161" data-chrome="noheader transparent noscrollbar nofooter">Tweets de @dandelion_proj</a>
+                  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   
+   <div class="container-fluid area-footer">     
+      <footer class="footer">
+   <div class="container">
+      <div class="row">
+         <div class="span9">
+            
+            <div class="row-fluid">
+               <div class="span3">
+                  <h3>Dandelion</h3>
+                  <ul>
+                     <li><a href="https://github.com/dandelion"><i class="fa fa-github"></i> Source repository</a></li>
+                     <li><a href="/team"><i class="fa fa-group"></i> Team</a></li>
+                     <li><a href="/roadmap"><i class="fa fa-road"></i> Roadmap</a></li>
+                     <li><a href="/acknowledgements/"><i class="fa fa-info-circle"></i> Acknowledgements</a></li>
+                     <li><a href="/faq"> <i class="fa fa-book"></i> FAQ</a></li>
+                  </ul>
+               </div>
+               <div class="span3">
+                  <h3><i class="fa fa-puzzle-piece"></i> Components</h3>
+                  <ul>
+                     <li><a href="/dandelion">Dandelion-Core</a></li>
+                     <li><a href="/datatables">Dandelion-Datatables</a></li>
+                     <li><a href="/webanalytics">Dandelion-Webanalytics</a></li>
+                  </ul>
+               </div>
+               <div class="span3">
+                  <h3><i class="fa fa-play"></i> Get started</h3>
+                  <ul>
+                     <li><a href="/get-started"> <i class="fa fa-book"></i> Get-started guide</a></li>
+                     <li><a href="https://github.com/dandelion/dandelion-samples"><i class="fa fa-code"></i> Samples</a></li>
+                  </ul>
+               </div>
+               <div class="span3">
+                  <h3><i class="fa fa-beer"></i> Community</h3>
+                  <ul>
+                     <li><a href="/blog"><i class="fa fa-comment-o"></i> Blog</a></li>
+                     <li><a href="http://dandelion-forum.48353.x6.nabble.com/"><i class="fa fa-comments-o"></i> Forum</a></li>
+                     <li><a href="https://twitter.com/dandelion_proj"><i class="fa fa-twitter"></i> Twitter</a></li>
+                  </ul>
+               </div>
+            </div>
+            
+         </div>
+         <div class="span3">
+            <p class="text-right" style="margin-top:10px;">
+               <a href="/"><img src="/assets/images/dandelion/github-dandelion-logo.png" alt="dandelion logo" style="margin-bottom:10px;"/></a>
+               Copyright © The <a href="/team">Dandelion Team</a>
+            </p>
+         </div>
+      </div>
+      <div class="row" style="padding-top:10px;">
+         <div class="span12">
+            <p class="text-center">
+               <strong>Dandelion</strong> and all its components are released under the <a href="http://opensource.org/licenses/BSD-3-Clause">BSD 3-Clause</a> licence. More information <a href="http://www.tldrlegal.com/license/bsd-3-clause-license-(revised)">here</a>.
+            </p>
+         </div>
+      </div>
+   </div>
+</footer>
+   </div>
+   
+   <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+   <script src="/assets/js/jquery.wordrotator.min.js"></script>
+   <script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-516d4b686f218f23"></script>
+   <script src="/assets/js/site-home.js"></script>
+</body>
+</html>

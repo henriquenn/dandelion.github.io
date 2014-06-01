@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <meta charset="utf-8">
+   <title>Dandelion Project</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="web, component, library, assets, datatables, java, javaee, framework, webjars, thymeleaf, jsp, taglib">
+   <meta name="author" content="Dandelion">
+   
+   <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
+   <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
+   <link href="/assets/css/prettify.css" rel="stylesheet">
+   <!--[if lt IE 9]>
+   <script src="/assets/js/html5shiv.js"></script>
+   <![endif]-->
+   
+   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/images/dandelion_square.png">
+   <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/images/dandelion_square.png">
+   <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/images/dandelion_square.png">
+   <link rel="apple-touch-icon-precomposed" href="/assets/images/dandelion_square.png">
+   <link rel="shortcut icon" href="/assets/images/dandelion_square.png">
+   
+   <link href="/assets/css/site-main.css" rel="stylesheet">
+   
+   <script>
+   var _gaq = _gaq || [];
+   _gaq.push([ '_setAccount', 'UA-33818546-8' ]);
+   _gaq.push([ '_setCookiePath', '/blog' ]);
+   _gaq.push([ '_trackPageview' ]);
+   (function() {
+      var ga = document.createElement('script');
+      ga.type = 'text/javascript';
+      ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(ga, s);
+   })();
+   </script>
+   
+   <link href="/blog/atom.xml" rel="alternate" title="Dandelion Project Blog" type="application/atom+xml" />
+
+   <link href="/assets/css/site-main.css" rel="stylesheet">
+   <link href="/assets/css/site-marketing.css" rel="stylesheet">
+   <link href="/assets/css/site-blog.css" rel="stylesheet">
+</head>
+<body>
+   <div class="navbar navbar-static-top">
+   <div class="navbar-inner">
+      <div class="container-fluid">
+         <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+         </button>
+         <a href="/">
+            <div id="logo_container">
+                <img id="logo_image" src="/assets/images/dandelion/github-dandelion-logo.png" alt="dandelion"/>
+                <p id="logo_text">
+                    blog
+                </p>
+            </div>
+         </a>
+         <div class="nav-collapse collapse">
+            <ul class="nav pull-right" style="margin-bottom: 5px; margin-top: 10px;">
+               <li class="text-center"><a href="/"><i class="fa fa-home fa-3x"></i><br/>Home</a></li>
+               <li class="text-center"><a href=""><i class="fa fa-comments-o fa-3x"></i><br />Forum</a></li>
+               <li class="text-center"><a href="/blog"><i class="fa fa-comment-o fa-3x"></i><br />Blog</a></li>
+               <li class="text-center"><a href="/faq"><i class="fa fa-book fa-3x"></i><br />FAQ</a></li>
+               <li class="text-center"><a href="/roadmap"><i class="fa fa-road fa-3x"></i><br />Roadmap</a></li>
+            </ul>
+         </div>
+      </div>
+   </div>
+</div>
+   
+   <div class="container" style="min-height: 500px; padding-top: 20px; padding-bottom:20px;">
+      <div class="row">
+         <div class="span12">
+            <script type="text/javascript">
+   var addthis_config = {
+      "data_track_addressbar":false,
+      "data_track_clickback":true,
+      "ui_offset_top": 187,
+      "ui_offset_left": 30,
+      "data_ga_tracker": "UA-33818546-8"
+   };
+   var addthis_share = {
+      "url" : "http://dandelion.github.io/blog/2014/05/25/dandelion-0.10.0-release",
+      "title" : "[Blog] Dandelion 0.10.0 Release"
+   }
+</script>
+<div class="row">
+   <div class="span12">
+      <h2 class="page-title">
+         Dandelion 0.10.0 Release 
+      </h1>
+
+      <ul class="breadcrumb tag_box">
+         <li>By <a href="/team">Thibault Duchateau</a></li>
+         <li>
+            <span class="divider">|</span>
+            <span>25 May 2014</span>
+         </li>
+         <li>
+            <span class="divider">|</span><i class="fa fa-comments"></i>
+            <a href="/blog/2014/05/25/dandelion-0.10.0-release#disqus_thread">Comments</a>
+         </li>
+         <li><span class="divider">|</span><i class="fa fa-tags"></i></li>
+          
+            <li class="tag"><a href="/blog/tags.html#Dandelion-Core-ref">Dandelion-Core</a></li>
+          
+            <li class="tag"><a href="/blog/tags.html#Dandelion-Datatables-ref">Dandelion-Datatables</a></li>
+         
+          
+            <li class="pull-right tag"><a href="/blog/categories.html#news-ref">news</a></li>
+          
+            <li class="pull-right tag"><a href="/blog/categories.html#release-ref">release</a></li>
+         
+         <li class="pull-right"></span><i class="fa fa-folder-open"></i></li>
+      </ul>
+
+      <div class="blog-content">
+         <p>After several months of hibernation, I'm happy to announce the...
+</p>
+<div>
+   <img style="float:right; padding-bottom:20px;" src="/assets/images/blog/gif_dance_now.gif" />
+   <h1 style="padding-top: 70px;">Release of Dandelion v0.10.0!</h1>
+</div>
+
+<h3 class="section-title" style="clear:both;">Past and present</h3>
+<p>
+   Until this release, <a href="/dandelion">Dandelion-Core</a> and
+   <a href="/datatables">Dandelion-Datatables</a> were evolving
+   separatly. It began about 2 years ago with
+   <i>Datatables4j</i>, aimed at easing the integration of
+   the <a
+      href="http://datatables.net/">DataTables jQuery plugin</a> in
+   JVM-based web applications. But with a recurring observation: the web
+   resources management can sometimes become a hell of a job. Especially
+   with DataTables, however complete, which sometimes requires extra
+   resources and can become hard to configure. Also with about 2
+   tons of new librairies released every month (approximate number).
+</p>
+<p>
+   That's why <a href="https://twitter.com/rlespinasse">Romain</a> and <a
+      href="https://twitter.com/tduchateau">I</a>, as good global
+   citizens, decided to find something to
+   address this issue.
+</p>
+<p>
+   After several prototypes based on a perfect use case - <i>Datatables4j</i>
+   - <a href="/dandelion">Dandelion</a> was born. We continued to
+   improve it independently during some months and finally, despite
+   several sudden new developments which held up the release for nearly
+   four months, we ended up releasing a whole new version of <a
+      href="/dandelion">Dandelion-Core</a> and connecting <a
+      href="/datatables">Dandelion-Datatables</a> to <a
+      href="/dandelion">Dandelion-Core</a> in the same time. <img
+      src="/assets/images/blog/rockout.png" />
+</p>
+<p>This is of course extremely satisfying for us. This is all the
+   more satisfying because Dandelion is, since the beginning, an
+   after-dinner project.</p>
+
+<h3 class="section-title">Versioning</h3>
+<p>
+   Starting from the v0.10.0, we have aligned
+   <a href="/dandelion">Dandelion-Core</a> and <a
+      href="/datatables">Dandelion-Datatables</a> versions. As for
+   example with <a
+      href="http://spring.io/">Spring</a>, you won't get a
+   headache studying which version of the component C2 is compatible
+   with the component C1. Every artifact is now released under the same
+   version number.
+</p>
+<p>
+   Note however that we have left out <a href="/webanalytics">Dandelion-Webanalytics</a>,
+   which is still incubating.
+</p>
+
+<h3 class="section-title">Dandelion-Datatables</h3>
+<p>
+   Much has changed! Below is an extract from the <a
+      href="/datatables/releases/0.10.0/">full change log</a>.
+</p>
+<ul>
+   <li>All extension mechanism has been refreshed and improved
+      thanks to the Dandelion-Core features</li>
+   <li>Performance increased by refactoring the internal
+      configuration system</li>
+   <li>New way to generate the Javascript code and possibility to
+      plug in a custom generator</li>
+   <li>Improved filtering with AJAX sources: <a href="/datatables/features/basics/filtering/delayed-filtering.html">delayed filtering</a>,
+      <a href="/datatables/features/ajax/reloading-data.html">data reloading</a>, ...</li>
+   <li>New <a href="/datatables/features/styling/">themes and theme options</a> available: <a
+      href="http://getbootstrap.com/">Bootstrap 3</a>,
+      BS2/BS3-Responsive option, based on <a
+      href="https://github.com/Comanche/datatables-responsive">datatables-responsive</a> by <a
+      href="https://github.com/Comanche">Comanche</a></li>
+</ul>
+<p>
+   For those who are already using Dandelion-Datatables, note that a
+   migration guide is <a
+      href="/datatables/docs/migration/from-0.9.x-to-0.10.x.html">available
+      here</a>.
+</p>
+
+<h3 class="section-title">Dandelion-Core</h3>
+<p>
+   <a href="/dandelion">Dandelion-Core</a> has became the fundation of
+   the <a href="/">Dandelion Framework</a>. In this regard:
+</p>
+<ul>
+   <li>the previous version (0.2.1) has been fully refactored and
+      now offers plenty of new features</li>
+   <li><a href="/datatables">Dandelion-Datatables</a> is now fully
+      integrated with <a href="/dandelion">Dandelion-Core</a>, as
+      mentioned above. The same will apply for <a href="/roadmap">future
+         components</a></li>
+   <li>and the cool thing is that you can also use <a
+      href="/dandelion">Dandelion-Core</a> as a standalone library!
+   </li>
+</ul>
+<p>Of course, much remains to be done. But it is something like that
+   popular saying: "done is better than perfect".</p>
+<p>Feel free to take a look at:</p>
+<ul>
+   <li>the <a href="/dandelion">brand new documentation</a></li>
+   <li>the <a href="/dandelion/releases/0.10.0/">full change
+         log</a></li>
+</ul>
+
+<h3 class="section-title">Sample applications</h3>
+<p>
+   Looots of sample applications have been added to the <a
+      href="https://github.com/dandelion/dandelion-samples">dedicated
+      repository</a>:
+</p>
+<ul>
+   <li>Under the <code>/dandelion</code> folder, you will find some
+      sample apps demonstrating the key features of <a href="/dandelion">Dandelion-Core</a>.
+      And others will soon follow.
+   </li>
+   <li>Under <code>/datatables</code>, plenty of new sample apps
+      demonstrating each of the Dandelion-Datatables' features.
+   </li>
+</ul>
+
+<p>
+   Note that we have also made a new <a
+      href="https://github.com/dandelion/dandelion-samples/tree/master/dandelion/dandelion-petclinic">Dandelion-enabled
+      version of the Spring PetClinic sample application</a> in which are
+   integrated both Dandelion-Core and Dandelion-Datatables. A series of
+   blog posts will be soon published in this regard.
+</p>
+<p>Finally, the official Spring PetClinic sample application will be
+   soon updated with this new version.</p>
+
+<h3 class="section-title">Issue tracker and workflow automation</h3>
+<p>We previously used a single Github repository for all issues but
+   it turned out to be less practical than we initially thought. That's
+   why each repository uses now its own issue tracker (the Github one).
+   Again, sorry for the notification bombing during the migration. :-/</p>
+<p>
+   And to add some <span style="text-decoration: line-through;">sugar</span>
+   fun to the issue management, all repositories are now
+   plugged in <a href="https://waffle.io/">waffle.io</a>. We will
+   progressively migrate issues/ideas from <a href="https://trello.com/">Trello</a>
+   to <a href="https://waffle.io/">waffle.io</a>, hoping that this will
+   bring more interaction and transparency to the issue workflow. Of
+   course, you can still use the native Github issue tracker, it's
+   really up to you.
+</p>
+
+<h3 class="section-title">Documentation</h3>
+<p>Of course, all <a href="/">documentation</a> has been refreshed to reflect
+   the last changes, both in <a href="/dandelion">Dandelion-Core</a> and
+   <a href="/datatables">Dandelion-Datatables</a>.</p>
+<p>But there is one other point it's worth noting: you can now
+   contribute to the documentation.</p>
+<p>
+   The doc site is now plugged in <a href="http://prose.io/">prose.io</a>.
+   <a href="https://github.com/prose/prose">Prose</a> is an awesome tool
+   for editing sites hosted on <a href="https://github.com">GitHub</a>.
+   You don't even need to know what a pull request means, this is done
+   automatically once you have submitted your changes. Long story short,
+   don't hesitate to improve the documentation!
+</p>
+
+<h3 class="section-title">Happy coding with Dandelion!</h3>
+<p>As usual, your thoughts and feedback are very welcome:</p>
+<ul style="list-style-type: none;">
+   <li><a href="https://twitter.com/dandelion_proj"><i
+         class="fa fa-twitter"></i> Twitter</a></li>
+   <li><a href="http://dandelion-forum.48353.n6.nabble.com/"><i
+         class="fa fa-comments-o"></i> Forum</a></li>
+   <li>Or using the comments below!</li>
+</ul>
+
+      </div>
+      
+      <hr />
+      
+      <!-- AddThis Button BEGIN -->
+      <div class="addthis_toolbox addthis_default_style addthis_32x32_style">
+         <a class="addthis_button_twitter"></a>
+         <a class="addthis_button_google_plusone_share"></a>
+         <a class="addthis_button_linkedin"></a>
+         <a class="addthis_button_facebook"></a>
+         <a class="addthis_button_compact"></a><a class="addthis_counter addthis_bubble_style"></a>
+      </div>
+      <script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
+      <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-516d4b686f218f23"></script>
+      <!-- AddThis Button END -->
+
+      <div id="disqus_thread" style="margin-top:15px;"></div>
+      <script type="text/javascript">
+      /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+      var disqus_shortname = 'dandelionproject'; // required: replace example with your forum shortname
+      
+      /* * * DON'T EDIT BELOW THIS LINE * * */
+      (function() {
+         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+         dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+         (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+      <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+   </div>
+</div>
+         </div>
+      </div>
+   </div>
+      
+   <div class="container-fluid area-footer">     
+      <footer class="footer">
+   <div class="container">
+      <div class="row">
+         <div class="span9">
+            
+            <div class="row-fluid">
+               <div class="span3">
+                  <h3>Dandelion</h3>
+                  <ul>
+                     <li><a href="https://github.com/dandelion"><i class="fa fa-github"></i> Source repository</a></li>
+                     <li><a href="/team"><i class="fa fa-group"></i> Team</a></li>
+                     <li><a href="/roadmap"><i class="fa fa-road"></i> Roadmap</a></li>
+                     <li><a href="/acknowledgements/"><i class="fa fa-info-circle"></i> Acknowledgements</a></li>
+                     <li><a href="/faq"> <i class="fa fa-book"></i> FAQ</a></li>
+                  </ul>
+               </div>
+               <div class="span3">
+                  <h3><i class="fa fa-puzzle-piece"></i> Components</h3>
+                  <ul>
+                     <li><a href="/dandelion">Dandelion-Core</a></li>
+                     <li><a href="/datatables">Dandelion-Datatables</a></li>
+                     <li><a href="/webanalytics">Dandelion-Webanalytics</a></li>
+                  </ul>
+               </div>
+               <div class="span3">
+                  <h3><i class="fa fa-play"></i> Get started</h3>
+                  <ul>
+                     <li><a href="/get-started"> <i class="fa fa-book"></i> Get-started guide</a></li>
+                     <li><a href="https://github.com/dandelion/dandelion-samples"><i class="fa fa-code"></i> Samples</a></li>
+                  </ul>
+               </div>
+               <div class="span3">
+                  <h3><i class="fa fa-beer"></i> Community</h3>
+                  <ul>
+                     <li><a href="/blog"><i class="fa fa-comment-o"></i> Blog</a></li>
+                     <li><a href="http://dandelion-forum.48353.x6.nabble.com/"><i class="fa fa-comments-o"></i> Forum</a></li>
+                     <li><a href="https://twitter.com/dandelion_proj"><i class="fa fa-twitter"></i> Twitter</a></li>
+                  </ul>
+               </div>
+            </div>
+            
+         </div>
+         <div class="span3">
+            <p class="text-right" style="margin-top:10px;">
+               <a href="/"><img src="/assets/images/dandelion/github-dandelion-logo.png" alt="dandelion logo" style="margin-bottom:10px;"/></a>
+               Copyright © The <a href="/team">Dandelion Team</a>
+            </p>
+         </div>
+      </div>
+      <div class="row" style="padding-top:10px;">
+         <div class="span12">
+            <p class="text-center">
+               <strong>Dandelion</strong> and all its components are released under the <a href="http://opensource.org/licenses/BSD-3-Clause">BSD 3-Clause</a> licence. More information <a href="http://www.tldrlegal.com/license/bsd-3-clause-license-(revised)">here</a>.
+            </p>
+         </div>
+      </div>
+   </div>
+</footer>
+   </div>
+   
+   <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+   <script src="//cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.min.js"></script>
+   <script src="/assets/js/site-main.js"></script>
+</body>
+</html>

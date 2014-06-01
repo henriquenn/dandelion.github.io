@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <meta charset="utf-8">
+   <title>Dandelion Project</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="web, component, library, assets, datatables, java, javaee, framework, webjars, thymeleaf, jsp, taglib">
+   <meta name="author" content="Dandelion">
+   
+   <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
+   <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
+   <link href="/assets/css/prettify.css" rel="stylesheet">
+   <!--[if lt IE 9]>
+   <script src="/assets/js/html5shiv.js"></script>
+   <![endif]-->
+   
+   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/images/dandelion_square.png">
+   <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/images/dandelion_square.png">
+   <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/images/dandelion_square.png">
+   <link rel="apple-touch-icon-precomposed" href="/assets/images/dandelion_square.png">
+   <link rel="shortcut icon" href="/assets/images/dandelion_square.png">
+   
+   <link href="/assets/css/site-main.css" rel="stylesheet">
+   
+   <script>
+   var _gaq = _gaq || [];
+   _gaq.push([ '_setAccount', 'UA-33818546-8' ]);
+   _gaq.push([ '_setCookiePath', '/datatables' ]);
+   _gaq.push([ '_trackPageview' ]);
+   (function() {
+      var ga = document.createElement('script');
+      ga.type = 'text/javascript';
+      ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(ga, s);
+   })();
+   </script>
+   
+   <link href="/assets/css/site-component.css" rel="stylesheet">
+   <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+   <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+   <div class="navbar navbar-static-top">
+   <div class="navbar-inner">
+      <div class="container-fluid">
+         <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+         </button>
+         <a href="/datatables">
+            <div id="logo_container">
+                <img id="logo_image" src="/assets/images/dandelion/github-dandelion-logo.png" alt="dandelion"/>
+                <p id="logo_text">
+                    datatables
+                </p>
+            </div>
+         </a>
+         <div class="nav-collapse collapse">
+            <ul class="nav pull-right" style="margin-bottom: 5px; margin-top: 10px;">
+               <li class="text-center"><a href="/"><i class="fa fa-home fa-3x"></i><br/>Home</a></li>
+               <li class="text-center"><a href="http://dandelion-forum.48353.x6.nabble.com/Dandelion-Datatables-f3.html"><i class="fa fa-comments-o fa-3x"></i><br />Forum</a></li>
+               <li class="text-center"><a href="/blog"><i class="fa fa-comment-o fa-3x"></i><br />Blog</a></li>
+               <li class="text-center"><a href="/faq"><i class="fa fa-book fa-3x"></i><br />FAQ</a></li>
+               <li class="text-center"><a href="/roadmap"><i class="fa fa-road fa-3x"></i><br />Roadmap</a></li>
+            </ul>
+         </div>
+      </div>
+   </div>
+</div>
+
+   <div class="container-fluid container-component">
+   <div class="row-fluid">
+      <div class="span3">
+         <div class="well sidebar-nav">
+      
+            <ul class="nav nav-list">
+               <h5>Overview</h5>
+               <li >
+                  <a href="/datatables"><i class="fa fa-home"></i> Dandelion-Datatables</a>
+               </li>
+               <li>
+                  <a href="https://github.com/dandelion/dandelion-samples/tree/master/datatables" title="Samples" target="_blank"> <i class="fa fa-code"></i> Samples</a>
+               </li>
+               <li >
+                  <a href="/datatables/releases/" title="Download"> <i class="fa fa-tags"></i> Releases</a>
+               </li>
+               <li >
+                  <a href="/datatables/docs/around-the-web/" title="Around the web"> <i class="fa fa-globe"></i> Around the web</a>
+               </li>
+               
+               <h5>Documentation</h5>
+               <li >
+                  <a href="/datatables/docs/installation/" title="Installation"><i class="fa fa-wrench"></i> Installation guides</a>
+                  
+               </li>
+               <li >
+                  <a href="/datatables/docs/ref/jsp/" title="JSP taglib"><i class="fa fa-book"></i> JSP taglib reference</a>
+                  
+               </li>
+               <li >
+                  <a href="/datatables/docs/ref/thymeleaf/" title="Thymeleaf dialect"><i class="fa fa-book"></i> Thymeleaf dialect reference</a>
+                  
+               </li>
+               <li >
+                  <a href="/datatables/docs/ref/configuration/" title="Configuration"><i class="fa fa-book"></i> Configuration reference</a>
+               </li>
+               <li >
+                  <a href="/datatables/docs/ref/bundles"><i class="fa fa-book"></i> Bundle reference</a>
+               </li>
+               <li >
+                  <a href="/datatables/docs/migration/" title="Migration guides"> <i class="fa fa-plane"></i> Migration guides</a>
+               </li>
+               
+               <h5>Features</h5>
+               <li >
+                  <a href="/datatables/features/dandelion/" title="Dandelion features"> <i class="fa fa-sitemap"></i> Dandelion</a>
+                  
+               </li>
+               <li >
+                  <a href="/datatables/features/basics/" title="Basics"> <i class="fa fa-leaf"></i> Basics</a>
+                  
+               </li>
+               <li  class="active">
+                  <a href="/datatables/features/styling/" title="Styling"> <i class="fa fa-magic"></i> Styling</a>
+                  
+                  <ul class="nav nav-list">
+                     <li >
+                        <a href="/datatables/features/styling/basics-of-styling.html"><i class="fa fa-angle-double-right"></i> Basics</a>
+                     </li>
+                     <li class="active">
+                        <a href="/datatables/features/styling/themes/index.html"><i class="fa fa-angle-double-right"></i> Themes</a>
+                     </li>
+                     
+                     <ul class="nav nav-list">
+                        <li >
+                           <a href="/datatables/features/styling/themes/bootstrap2.html"><i class="fa fa-angle-double-right"></i> Bootstrap 2</a>
+                        </li>
+                        <li class="active">
+                           <a href="/datatables/features/styling/themes/bootstrap3.html"><i class="fa fa-angle-double-right"></i> Bootstrap 3</a>
+                        </li>
+                        <li >
+                           <a href="/datatables/features/styling/themes/jqueryui.html"><i class="fa fa-angle-double-right"></i> jQuery UI</a>
+                        </li>
+                     </ul>
+                     
+                     </li>
+                  </ul>
+                  
+               </li>
+               <li >
+                  <a href="/datatables/features/export/" title="Export"> <i class="fa fa-print"></i> Export</a>
+                  
+               </li>
+               <li >
+                  <a href="/datatables/features/advanced/" title="Advanced usage"> <i class="fa fa-fire"></i> Advanced usage</a>
+                  
+               </li>
+               <li >
+                  <a href="/datatables/features/ajax/" title="AJAX"> <i class="fa fa-refresh"></i> AJAX</a>
+                  
+               </li>
+               <li >
+                  <a href="/datatables/features/i18n/" title="Internationalization"> <i class="fa fa-flag-o"></i> I18n</a>
+                  
+               </li>
+               <li >
+                  <a href="/datatables/features/plugins/" title="Plugins"> <i class="fa fa-plus"></i> Plugins</a>
+                  
+               </li>
+               <li >
+                  <a href="/datatables/features/configuration/" title="Configuration"> <i class="fa fa-cog"></i> Configuration</a>
+                  
+               </li>
+               <li >
+                  <a href="/datatables/features/extension/" title="Extension"> <i class="fa fa-puzzle-piece"></i> Extension</a>
+                  
+               </li>
+               <h5>Development</h5>
+               <li>
+                  <a href="https://github.com/dandelion/dandelion-datatables" alt="Dandelion-Datatables sources" title="Sources" target="_blank"><i class="fa fa-github"></i> Sources</a>
+               </li>
+               <li>
+                  <a href="https://dandelion.ci.cloudbees.com/" title="Continuous integration" target="_blank"><i class="fa fa-cogs"></i> Continuous integration</a>
+               </li>
+               <li>
+                  <a href="/faq/#contributing" title="Contributing"><i class="fa fa-heart"></i> Contributing</a>
+               </li>
+            </ul>
+         </div>
+      </div>
+      <div class="span9">
+         <div class="row-fluid" style="min-height:500px;">
+            <ul class="breadcrumb hidden-phone">
+   <li><a href="/"><i class="fa fa-home"></i></a></li>
+   <li><span class="divider">|</span><a href="/datatables">Dandelion-Datatables</a></li>
+     
+   
+   <li><span class="divider">|</span><a href="/datatables/"></a></li>
+   
+
+   
+   <li><span class="divider">|</span><a href="/datatables//styling">Styling</a></li>
+   
+     
+   
+   <li><span class="divider">|</span><a href="/datatables//styling/themes">Themes</a></li>
+   
+   
+   
+   <li><span class="divider">|</span><a href="/datatables//styling/themes/bootstrap3">Bootstrap 3 theme</a></li>
+   
+   
+   <li class="pull-right" style="margin-left:5px;">
+      <form class="custom-form-search" action="http://google.com/search" method="get" style="margin:0;">
+         <input type="hidden" name="q" value="site:dandelion.github.io/datatables">
+         <div class="input-append">
+            <input type="text" class="input-medium" name="q" placeholder="Search via Google" />
+            <button type="submit" class="btn"><i class="icon-search"></i></button>
+         </div>
+      </form>
+   </li>
+   
+   <li class="pull-right">
+      Latest release: <a href="/datatables/releases/0.10.0/">0.10.0</a>
+      <span class="divider">|</span>
+   </li>
+</ul>
+
+
+            <h2 class="page-title">Bootstrap 3 theme</h2>
+<p>
+   Dandelion-Datatables provides an easy way to apply the
+   <a href="http://getbootstrap.com/">Bootstrap framework</a> (v3)
+   on your tables.
+</p>
+
+<h3 class="section-title" id="atb3t">Activating the Bootstrap 3 theme</h3>
+<p>
+   Just follow these steps:
+</p>
+<ol>
+   <li><i>Use the JSP taglib / Thymeleaf dialect</i>
+      <p>
+         Set the <a href="/datatables/docs/ref/jsp/table.html#theme"><code>theme</code></a> (JSP) / <a href="/datatables/docs/ref/thymeleaf/table.html#dt:theme"><code>dt:theme</code></a> (Thymeleaf) table attribute to <code>bootstrap3</code>.
+      </p>
+   </li>
+   <li><i>Use the Bootstrap classes</i>
+      <p>
+         At least, you need to add the
+         <code>table</code>
+         CSS class. But you can use any of the other CSS classes
+         provided by Bootstrap:
+         <code>table-striped</code>
+         ,
+         <code>table-bordered</code>
+         , ...
+      </p>
+      <p>
+         Just use the <a href="/datatables/docs/ref/jsp/table.html#cssClass"><code>cssClass</code></a> table attribute of
+         the JSP taglib, or simply the
+         <code>class</code>
+         table attribute when using Thymeleaf.
+      </p>
+   </li>
+</ol>
+
+<h3 class="section-title" id="ex">Example</h3>
+<h4>Using JSP</h4>
+<pre class="prettyprint">
+&lt;datatables:table id="myTableId" data="${persons}" theme="bootstrap3" cssClass="table table-striped">
+   &lt;datatables:column title="Id" property="id" />
+   &lt;datatables:column title="FirstName" property="firstName" />
+   &lt;datatables:column title="LastName" property="lastName" />
+   &lt;datatables:column title="Street" property="address.town.name" />
+   &lt;datatables:column title="Mail" property="mail" />
+&lt;/datatables:table>
+</pre>
+
+<h4>Using Thymeleaf</h4>
+<pre class="prettyprint">
+&lt;table id="myTableId" dt:table="true" dt:theme="bootstrap3" class="table table-striped">
+   &lt;thead>
+      &lt;tr>
+         &lt;th>Id&lt;/th>
+         &lt;th>Firstname&lt;/th>
+         &lt;th>Lastname&lt;/th>
+         &lt;th>Street&lt;/th>
+         &lt;th>Mail&lt;/th>
+      &lt;/tr>
+   &lt;/thead>
+   &lt;tbody>
+      &lt;tr th:each="person : ${persons}">
+         &lt;td th:text="${person?.id}">1&lt;/td>
+         &lt;td th:text="${person?.firstName}">John&lt;/td>
+         &lt;td th:text="${person?.lastName}">Doe&lt;/td>
+         &lt;td th:text="${person?.address?.town?.name}">Nobody knows !&lt;/td>
+         &lt;td th:text="${person?.mail}">john@doe.com&lt;/td>
+      &lt;/tr>
+   &lt;/tbody>
+&lt;/table>
+</pre>
+
+
+<h3 class="section-title" id="mytr">Making your table responsive</h3>
+<p>
+   Starting from the v0.10.0, an extension based on
+   <a href="https://github.com/Comanche/datatables-responsive">datatables-responsible</a>,
+   authored by <a href="https://github.com/Comanche">Comanche</a>, has
+   been added, allowing you to add a responsibe behaviour to your tables.
+</p>
+<p>
+   To enable a responsive behaviour, you need:
+</p>
+<ol>
+   <li>To activate the <i>datatables-responsive</i> extension using the
+      <a href="/datatables/docs/ref/jsp/table.html#ext"><code>ext</code></a> (JSP) / <a href="/datatables/docs/ref/thymeleaf/table.html#dt:ext"><code>dt:ext</code></a>
+      (Thymeleaf) table attribute.
+   </li>
+   <li>Add some data-* attributes to the table elements:
+      <ul>
+         <li>Add the <code>data-class="expand"</code> attribute to
+            the <code>th</code> element for the respective column that
+            will you want to display the expand icon in. The th element
+            cannot be for a column that will be hidden.
+         </li>
+         <li>Add <code>data-hide="phone,tablet"</code> to the <code>th</code>
+            element for the respective column that will you want to hide
+            when the window is resized.
+         </li>
+         <li>Add <code>data-name="Hidden Column Name"</code> to the
+            <code>th</code> element for the respective column that will
+            you would like its label to be set to when hidden.
+         </li>
+      </ul>
+   </li>
+</ol>
+<p>
+   That's all!
+</p>
+
+<h4>Example using JSP</h4>
+<pre class="prettyprint">
+&lt;datatables:table id="myTableId" data="${persons}" theme="bootstrap3" ext="bootstrap3-responsive" cssClass="table table-striped table-bordered">
+   &lt;datatables:column title="Id" property="id" data-class="expand" />
+   &lt;datatables:column title="FirstName" property="firstName" />
+   &lt;datatables:column title="LastName" property="lastName" />
+   &lt;datatables:column title="Street" property="address.town.name" data-hide="phone,tablet" />
+   &lt;datatables:column title="Mail" property="mail" data-hide="phone,tablet" />
+&lt;/datatables:table>
+</pre>
+
+<h4>Example using Thymeleaf</h4>
+<pre class="prettyprint">
+&lt;table id="myTableId" dt:table="true" dt:theme="bootstrap3" class="table table-striped table-bordered" dt:ext="bootstrap3-responsive">
+   &lt;thead>
+      &lt;tr>
+         &lt;th data-class="expand">Id&lt;/th>
+         &lt;th>LastName&lt;/th>
+         &lt;th>FirstName&lt;/th>
+         &lt;th data-hide="phone,tablet">City&lt;/th>
+         &lt;th data-hide="phone,tablet">Mail&lt;/th>
+      &lt;/tr>
+   &lt;/thead>
+   &lt;tbody>
+      &lt;tr th:each="person : ${persons}">
+         &lt;td th:text="${person?.id}">1&lt;/td>
+         &lt;td th:text="${person?.lastName}">Doe&lt;/td>
+         &lt;td th:text="${person?.firstName}">John&lt;/td>
+         &lt;td th:text="${person?.address?.town?.name}">Nobody knows!&lt;/td>
+         &lt;td th:text="${person?.mail}">john@doe.com&lt;/td>
+      &lt;/tr>
+   &lt;/tbody>
+&lt;/table>
+</pre>
+
+         </div>
+         <div class="row-fluid" style="margin-top: 10px;">
+            <a href="/contributing.html#/datatables/features/styling/themes/bootstrap3.html" title="Improve this page!" class="btn btn-mini" style="float:right;"><i class="fa fa-edit"></i> Improve this page</a>
+         </div>
+      </div>
+   </div>
+</div>
+   
+   <div class="container-fluid area-footer">     
+      <footer class="footer">
+   <div class="container">
+      <div class="row">
+         <div class="span9">
+            
+            <div class="row-fluid">
+               <div class="span3">
+                  <h3>Dandelion</h3>
+                  <ul>
+                     <li><a href="https://github.com/dandelion"><i class="fa fa-github"></i> Source repository</a></li>
+                     <li><a href="/team"><i class="fa fa-group"></i> Team</a></li>
+                     <li><a href="/roadmap"><i class="fa fa-road"></i> Roadmap</a></li>
+                     <li><a href="/acknowledgements/"><i class="fa fa-info-circle"></i> Acknowledgements</a></li>
+                     <li><a href="/faq"> <i class="fa fa-book"></i> FAQ</a></li>
+                  </ul>
+               </div>
+               <div class="span3">
+                  <h3><i class="fa fa-puzzle-piece"></i> Components</h3>
+                  <ul>
+                     <li><a href="/dandelion">Dandelion-Core</a></li>
+                     <li><a href="/datatables">Dandelion-Datatables</a></li>
+                     <li><a href="/webanalytics">Dandelion-Webanalytics</a></li>
+                  </ul>
+               </div>
+               <div class="span3">
+                  <h3><i class="fa fa-play"></i> Get started</h3>
+                  <ul>
+                     <li><a href="/get-started"> <i class="fa fa-book"></i> Get-started guide</a></li>
+                     <li><a href="https://github.com/dandelion/dandelion-samples"><i class="fa fa-code"></i> Samples</a></li>
+                  </ul>
+               </div>
+               <div class="span3">
+                  <h3><i class="fa fa-beer"></i> Community</h3>
+                  <ul>
+                     <li><a href="/blog"><i class="fa fa-comment-o"></i> Blog</a></li>
+                     <li><a href="http://dandelion-forum.48353.x6.nabble.com/"><i class="fa fa-comments-o"></i> Forum</a></li>
+                     <li><a href="https://twitter.com/dandelion_proj"><i class="fa fa-twitter"></i> Twitter</a></li>
+                  </ul>
+               </div>
+            </div>
+            
+         </div>
+         <div class="span3">
+            <p class="text-right" style="margin-top:10px;">
+               <a href="/"><img src="/assets/images/dandelion/github-dandelion-logo.png" alt="dandelion logo" style="margin-bottom:10px;"/></a>
+               Copyright © The <a href="/team">Dandelion Team</a>
+            </p>
+         </div>
+      </div>
+      <div class="row" style="padding-top:10px;">
+         <div class="span12">
+            <p class="text-center">
+               <strong>Dandelion</strong> and all its components are released under the <a href="http://opensource.org/licenses/BSD-3-Clause">BSD 3-Clause</a> licence. More information <a href="http://www.tldrlegal.com/license/bsd-3-clause-license-(revised)">here</a>.
+            </p>
+         </div>
+      </div>
+   </div>
+</footer>
+   </div>
+   
+   <script src="//cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.min.js"></script>
+   <script src="/assets/js/site-main.js"></script>
+</body>
+</html>

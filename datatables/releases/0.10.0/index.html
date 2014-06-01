@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <meta charset="utf-8">
+   <title>Dandelion Project</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="web, component, library, assets, datatables, java, javaee, framework, webjars, thymeleaf, jsp, taglib">
+   <meta name="author" content="Dandelion">
+   
+   <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
+   <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
+   <link href="/assets/css/prettify.css" rel="stylesheet">
+   <!--[if lt IE 9]>
+   <script src="/assets/js/html5shiv.js"></script>
+   <![endif]-->
+   
+   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/images/dandelion_square.png">
+   <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/images/dandelion_square.png">
+   <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/images/dandelion_square.png">
+   <link rel="apple-touch-icon-precomposed" href="/assets/images/dandelion_square.png">
+   <link rel="shortcut icon" href="/assets/images/dandelion_square.png">
+   
+   <link href="/assets/css/site-main.css" rel="stylesheet">
+   
+   <script>
+   var _gaq = _gaq || [];
+   _gaq.push([ '_setAccount', 'UA-33818546-8' ]);
+   _gaq.push([ '_setCookiePath', '/datatables' ]);
+   _gaq.push([ '_trackPageview' ]);
+   (function() {
+      var ga = document.createElement('script');
+      ga.type = 'text/javascript';
+      ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(ga, s);
+   })();
+   </script>
+   
+   <link href="/assets/css/site-component.css" rel="stylesheet">
+   <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+   <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+   <div class="navbar navbar-static-top">
+   <div class="navbar-inner">
+      <div class="container-fluid">
+         <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+         </button>
+         <a href="/datatables">
+            <div id="logo_container">
+                <img id="logo_image" src="/assets/images/dandelion/github-dandelion-logo.png" alt="dandelion"/>
+                <p id="logo_text">
+                    datatables
+                </p>
+            </div>
+         </a>
+         <div class="nav-collapse collapse">
+            <ul class="nav pull-right" style="margin-bottom: 5px; margin-top: 10px;">
+               <li class="text-center"><a href="/"><i class="fa fa-home fa-3x"></i><br/>Home</a></li>
+               <li class="text-center"><a href="http://dandelion-forum.48353.x6.nabble.com/Dandelion-Datatables-f3.html"><i class="fa fa-comments-o fa-3x"></i><br />Forum</a></li>
+               <li class="text-center"><a href="/blog"><i class="fa fa-comment-o fa-3x"></i><br />Blog</a></li>
+               <li class="text-center"><a href="/faq"><i class="fa fa-book fa-3x"></i><br />FAQ</a></li>
+               <li class="text-center"><a href="/roadmap"><i class="fa fa-road fa-3x"></i><br />Roadmap</a></li>
+            </ul>
+         </div>
+      </div>
+   </div>
+</div>
+
+   <div class="container-fluid container-component">
+   <div class="row-fluid">
+      <div class="span3">
+         <div class="well sidebar-nav">
+      
+            <ul class="nav nav-list">
+               <h5>Overview</h5>
+               <li >
+                  <a href="/datatables"><i class="fa fa-home"></i> Dandelion-Datatables</a>
+               </li>
+               <li>
+                  <a href="https://github.com/dandelion/dandelion-samples/tree/master/datatables" title="Samples" target="_blank"> <i class="fa fa-code"></i> Samples</a>
+               </li>
+               <li  class="active">
+                  <a href="/datatables/releases/" title="Download"> <i class="fa fa-tags"></i> Releases</a>
+               </li>
+               <li >
+                  <a href="/datatables/docs/around-the-web/" title="Around the web"> <i class="fa fa-globe"></i> Around the web</a>
+               </li>
+               
+               <h5>Documentation</h5>
+               <li >
+                  <a href="/datatables/docs/installation/" title="Installation"><i class="fa fa-wrench"></i> Installation guides</a>
+                  
+               </li>
+               <li >
+                  <a href="/datatables/docs/ref/jsp/" title="JSP taglib"><i class="fa fa-book"></i> JSP taglib reference</a>
+                  
+               </li>
+               <li >
+                  <a href="/datatables/docs/ref/thymeleaf/" title="Thymeleaf dialect"><i class="fa fa-book"></i> Thymeleaf dialect reference</a>
+                  
+               </li>
+               <li >
+                  <a href="/datatables/docs/ref/configuration/" title="Configuration"><i class="fa fa-book"></i> Configuration reference</a>
+               </li>
+               <li >
+                  <a href="/datatables/docs/ref/bundles"><i class="fa fa-book"></i> Bundle reference</a>
+               </li>
+               <li >
+                  <a href="/datatables/docs/migration/" title="Migration guides"> <i class="fa fa-plane"></i> Migration guides</a>
+               </li>
+               
+               <h5>Features</h5>
+               <li >
+                  <a href="/datatables/features/dandelion/" title="Dandelion features"> <i class="fa fa-sitemap"></i> Dandelion</a>
+                  
+               </li>
+               <li >
+                  <a href="/datatables/features/basics/" title="Basics"> <i class="fa fa-leaf"></i> Basics</a>
+                  
+               </li>
+               <li >
+                  <a href="/datatables/features/styling/" title="Styling"> <i class="fa fa-magic"></i> Styling</a>
+                  
+               </li>
+               <li >
+                  <a href="/datatables/features/export/" title="Export"> <i class="fa fa-print"></i> Export</a>
+                  
+               </li>
+               <li >
+                  <a href="/datatables/features/advanced/" title="Advanced usage"> <i class="fa fa-fire"></i> Advanced usage</a>
+                  
+               </li>
+               <li >
+                  <a href="/datatables/features/ajax/" title="AJAX"> <i class="fa fa-refresh"></i> AJAX</a>
+                  
+               </li>
+               <li >
+                  <a href="/datatables/features/i18n/" title="Internationalization"> <i class="fa fa-flag-o"></i> I18n</a>
+                  
+               </li>
+               <li >
+                  <a href="/datatables/features/plugins/" title="Plugins"> <i class="fa fa-plus"></i> Plugins</a>
+                  
+               </li>
+               <li >
+                  <a href="/datatables/features/configuration/" title="Configuration"> <i class="fa fa-cog"></i> Configuration</a>
+                  
+               </li>
+               <li >
+                  <a href="/datatables/features/extension/" title="Extension"> <i class="fa fa-puzzle-piece"></i> Extension</a>
+                  
+               </li>
+               <h5>Development</h5>
+               <li>
+                  <a href="https://github.com/dandelion/dandelion-datatables" alt="Dandelion-Datatables sources" title="Sources" target="_blank"><i class="fa fa-github"></i> Sources</a>
+               </li>
+               <li>
+                  <a href="https://dandelion.ci.cloudbees.com/" title="Continuous integration" target="_blank"><i class="fa fa-cogs"></i> Continuous integration</a>
+               </li>
+               <li>
+                  <a href="/faq/#contributing" title="Contributing"><i class="fa fa-heart"></i> Contributing</a>
+               </li>
+            </ul>
+         </div>
+      </div>
+      <div class="span9">
+         <div class="row-fluid" style="min-height:500px;">
+            <ul class="breadcrumb hidden-phone">
+   <li><a href="/"><i class="fa fa-home"></i></a></li>
+   <li><span class="divider">|</span><a href="/datatables">Dandelion-Datatables</a></li>
+     
+   
+   <li><span class="divider">|</span><a href="/datatables/releases">Releases</a></li>
+   
+
+   
+   <li><span class="divider">|</span><a href="/datatables/releases/0.10.0">0.10.0</a></li>
+   
+     
+   
+   
+   
+   
+   <li class="pull-right" style="margin-left:5px;">
+      <form class="custom-form-search" action="http://google.com/search" method="get" style="margin:0;">
+         <input type="hidden" name="q" value="site:dandelion.github.io/datatables">
+         <div class="input-append">
+            <input type="text" class="input-medium" name="q" placeholder="Search via Google" />
+            <button type="submit" class="btn"><i class="icon-search"></i></button>
+         </div>
+      </form>
+   </li>
+   
+   <li class="pull-right">
+      Latest release: <a href="/datatables/releases/0.10.0/">0.10.0</a>
+      <span class="divider">|</span>
+   </li>
+</ul>
+
+
+            <h2 class="page-title">Dandelion-Datatables 0.10.0 change log<span class="release-date">05-24-2014</span></h2>
+
+<p>
+   If you were using Dandelion-Datatables 0.9.x, please read the
+   <a href="/datatables/docs/migration/from-0.9.x-to-0.10.x.html">migration
+      guide</a>.
+</p>
+
+<h3 class="section-title">Core</h3>
+<ul>
+   <li><strong>Finally connected <a href="/datatables">Dandelion-Datatables</a> to <a href="/dandelion">Dandelion-Core</a>!</strong>
+      <ul>
+         <li>All extensions have been refactored in order to be
+            able to interact with the <a
+            href="/dandelion/features/asset-bundles/building-a-bundle-graph/">bundle
+               graph</a>.
+         </li>
+         <li>Lots of vendor bundles have been added and are available in the <i>datatables-core</i> JAR:
+            <ul>
+               <li>jQuery</li>
+               <li>DataTables</li>
+               <li>Bootstrap v2</li>
+               <li>Bootstrap v3</li>
+               <li>See the full <a href="/datatables/docs/ref/bundles/">bundle reference here</a></li>
+            </ul>
+         </li>
+         <li>New syntax available is some attributes (JSP and Thymeleaf)
+            <ul>
+               <li>For instance in the <a href="/datatables/docs/ref/jsp/column.html#renderFunction"><code>renderFunction</code></a> column attribute, the following
+                  syntax can now be used: <code>renderFunction="bundleNameToIncludeInTheCurrentRequest#javascriptFunction"</code>
+                  thus allowing to avoid using the Dandelion JSP taglib
+                  or Thymeleaf dialect to include manually the bundle in
+                  the request
+               </li>
+               <li>Multiple bundles can now be added, separated by a comma. For example: <code>renderFunction="bundle1,bundle2#javascriptFunction"</code></li>
+               <li>Read more <a href="/datatables/features/dandelion/bundle-special-syntax.html">here</a></li>
+            </ul>
+         </li>
+         <li>New <a href="/datatables/docs/ref/configuration/#main.standalone">main.standalone</a> configuration property allowing to use Dandelion-Datatables as a standalone library</li>
+      </ul>
+   </li>
+   <li><strong>Configuration improvements</strong>
+      <ul>
+         <li>Refactored the whole configuration system for greater clarity and better performance
+            <ul>
+               <li>The main goal of this refactoring was to increase performance by removing reflection.</li>
+               <li>Added a new <code>ConfigToken <a title="Source" href="https://github.com/dandelion/dandelion-datatables/blob/dandelion-datatables-0.10.0/datatables-core/src/main/java/com/github/dandelion/datatables/core/configuration/ConfigToken.java"><i class="fa fa-github"></i></a> <a title="Javadoc" href="/datatables/releases/0.10.0/javadoc/datatables-core/com/github/dandelion/datatables/core/configuration/ConfigToken.html"><i class="fa fa-book"></i></a></code> class allowing to store a configuration, how to read it from properties and how to process it. Note that even if all configurations have been refactored to comply with CamelCase syntax, the case remains insensitive when it's read.</li>
+               <li>Added <code>TableConfig <a title="Source" href="https://github.com/dandelion/dandelion-datatables/blob/dandelion-datatables-0.10.0/datatables-core/src/main/java/com/github/dandelion/datatables/core/configuration/TableConfig.java"><i class="fa fa-github"></i></a> <a title="Javadoc" href="/datatables/releases/0.10.0/javadoc/datatables-core/com/github/dandelion/datatables/core/configuration/TableConfig.html"><i class="fa fa-book"></i></a></code> and <code>ColumnConfig <a title="Source" href="https://github.com/dandelion/dandelion-datatables/blob/dandelion-datatables-0.10.0/datatables-core/src/main/java/com/github/dandelion/datatables/core/configuration/ColumnConfig.java"><i class="fa fa-github"></i></a> <a title="Javadoc" href="/datatables/releases/0.10.0/javadoc/datatables-core/com/github/dandelion/datatables/core/configuration/ColumnConfig.html"><i class="fa fa-book"></i></a></code> classes: placeholders for all possible configurations</li>
+               <li>Refactored <code>TableConfiguration <a title="Source" href="https://github.com/dandelion/dandelion-datatables/blob/dandelion-datatables-0.10.0/datatables-core/src/main/java/com/github/dandelion/datatables/core/configuration/TableConfiguration.java"><i class="fa fa-github"></i></a> <a title="Javadoc" href="/datatables/releases/0.10.0/javadoc/datatables-core/com/github/dandelion/datatables/core/configuration/TableConfiguration.html"><i class="fa fa-book"></i></a></code> and <code>ColumnConfiguration <a title="Source" href="https://github.com/dandelion/dandelion-datatables/blob/dandelion-datatables-0.10.0/datatables-core/src/main/java/com/github/dandelion/datatables/core/configuration/ColumnConfiguration.java"><i class="fa fa-github"></i></a> <a title="Javadoc" href="/datatables/releases/0.10.0/javadoc/datatables-core/com/github/dandelion/datatables/core/configuration/ColumnConfiguration.html"><i class="fa fa-book"></i></a></code> objects to use the recently added <code>ConfigToken <a title="Source" href="https://github.com/dandelion/dandelion-datatables/blob/dandelion-datatables-0.10.0/datatables-core/src/main/java/com/github/dandelion/datatables/core/configuration/ConfigToken.java"><i class="fa fa-github"></i></a> <a title="Javadoc" href="/datatables/releases/0.10.0/javadoc/datatables-core/com/github/dandelion/datatables/core/configuration/ConfigToken.html"><i class="fa fa-book"></i></a></code> instead of plenty of fields/accessors</li>
+               <li>All configurations are now lazy processed, i.e. in the JSP taglib or in the
+                  Thymeleaf dialect but no longer when a TableConfiguration is instantiated. Two
+                  operations are now well decoupled: first the local configuration is applied (and
+                  overloads the one loaded from properties) and then the whole configuration is
+                  processed only once</li>
+               <li>Now all processors extends the same processor: <code>AbstractConfigurationProcessor <a title="Source" href="https://github.com/dandelion/dandelion-datatables/blob/dandelion-datatables-0.10.0/datatables-core/src/main/java/com/github/dandelion/datatables/core/processor/AbstractConfigurationProcessor.java"><i class="fa fa-github"></i></a> <a title="Javadoc" href="/datatables/releases/0.10.0/javadoc/datatables-core/com/github/dandelion/datatables/core/processor/AbstractConfigurationProcessor.html"><i class="fa fa-book"></i></a></code>. This allowed to remove code duplication and especially to handle in one place the case of processor that accept the recently added <a href="/datatables/features/dandelion/bundle-special-syntax.html">bundle syntax</a>.</li>
+            </ul>
+         </li>
+         <li>The user properties file is now read from the <code>dandelion/datatables</code> folder.
+            When read from a system property, it remains unchanged. See more <a
+            href="/datatables/features/configuration/configuration-loading.html">here</a>.
+         </li>
+         <li>Fixed auto configuration of the <code>JstlMessageResolver <a title="Source" href=""><i class="fa fa-github"></i></a> <a title="Javadoc" href=""><i class="fa fa-book"></i></a></code>: it was auto-configured because of the presence of the JSTL JAR in the classpath, even in Thymeleaf-based applications (only when using the Thymeleaf Tiles2 extra)</li>
+         <li>The <code>AjaxReloadFunctionProcessor <a title="Source" href="https://github.com/dandelion/dandelion-datatables/blob/dandelion-datatables-0.10.0/datatables-core/src/main/java/com/github/dandelion/datatables/core/processor/ajax/AjaxReloadFunctionProcessor.java"><i class="fa fa-github"></i></a> <a title="Javadoc" href="/datatables/releases/0.10.0/javadoc/datatables-core/com/github/dandelion/datatables/core/processor/ajax/AjaxReloadFunctionProcessor.html"><i class="fa fa-book"></i></a></code> now accept the <a
+            href="/datatables/features/dandelion/bundle-special-syntax.html">bundle
+               special syntax</a>.
+         </li>
+         <li>Added support for hot reloading of whole the
+            configuration when the <a
+            href="/dandelion/features/development-mode/">development
+               mode</a> is enabled.
+            <ul>
+               <li><code>datatables.properties</code> (containing
+                  the main configuration of the component)</li>
+               <li>all <code>datatables_XX.properties</code>
+                  (bundles containing internationalized messages)
+               </li>
+            </ul>
+         </li>
+      </ul>
+   </li>
+   <li><strong>Improved the extension API</strong>
+      <ul>
+         <li>Fixed issue with the <code>addCssClass</code> method when one or more CSS classes was added to a column (header or not)</li>
+         <li>Fixed issue when trying to modify CSS classes inside an extension using Thymeleaf</li>
+         <li>New utilities available in the <code>AbstractExtension <a title="Source" href="https://github.com/dandelion/dandelion-datatables/blob/dandelion-datatables-0.10.0/datatables-core/src/main/java/com/github/dandelion/datatables/core/extension/AbstractExtension.java"><i class="fa fa-github"></i></a> <a title="Javadoc" href="/datatables/releases/0.10.0/javadoc/datatables-core/com/github/dandelion/datatables/core/extension/AbstractExtension.html"><i class="fa fa-book"></i></a></code> class</li>
+      </ul>
+   </li>
+   <li><strong>Reintegrated URL processing</strong>
+      <ul>
+         <li>The URL passed in some of the JSP taglib attributes is now processed again (context path applied) in order to be able to apply some internal request parameters</li>
+         <li>Removed RequestHelper and added some utilites in UrlUtils</li>
+         <li>The HttpServletResponse is now part of the <code>TableConfiguration <a title="Source" href="https://github.com/dandelion/dandelion-datatables/blob/dandelion-datatables-0.10.0/datatables-core/src/main/java/com/github/dandelion/datatables/core/configuration/TableConfiguration.java"><i class="fa fa-github"></i></a> <a title="Javadoc" href="/datatables/releases/0.10.0/javadoc/datatables-core/com/github/dandelion/datatables/core/configuration/TableConfiguration.html"><i class="fa fa-book"></i></a></code>, in order to be able to encode URLs if necessary</li>
+      </ul>
+   </li>
+   <li><strong>Sorting</strong>
+      <ul>
+         <li>Custom sort types can now be used in the <a href="/datatables/docs/ref/jsp/column.html#sortType"><code>sortType</code></a> / <a href="/datatables/docs/ref/thymeleaf/column.html#dt:sortType"><code>dt:sortType</code></a> column attribute.</li>
+      </ul>
+   </li>
+   <li><strong>Filtering</strong>
+      <ul>
+         <li>Added support for <a href="/datatables/features/basics/filtering/filtering-on-click.html">filtering on click</a></li>
+         <li>Added support for <a href="/datatables/features/basics/filtering/delayed-filtering.html">delayed filtering</a>, either based on time or on entered characters</li>
+         <li>Added support for multi-filtering based on a new <a href="/datatables/docs/ref/jsp/column.html#name"><code>name</code></a> / <a href="/datatables/docs/ref/thymeleaf/column.html#dt:name"><code>dt:name</code></a> column attribute</li>
+         <li>New "date_range" filter type, automatically created with bootstrap datepicker when enabled</li>
+         <li>Fixed issue with repeated headers: now the duplicated cells added for filtering but without any filtering element remains empty</li>
+         <li>Updated the <a href="https://github.com/tduchateau/jquery-datatables-column-filter">filtering add-on</a> to the latest version</li>
+      </ul>
+   </li>
+   <li><strong>Pagination</strong>
+      <ul>
+         <li>Fixed display issue in the listbox pagination style</li>
+         <li>New pagination styles based on Bootstrap 2: bootstrap_four_button and
+            bootstrap_full_numbers. See <a
+            href="/datatables/features/basics/paging/changing-pagination-style.html">here</a> for
+            further details.
+         </li>
+      </ul>
+   </li>
+   <li><strong>Export</strong>
+      <ul>
+         <li>Refactored export mechanism to be able to use a
+            totally custom export. Some export formats use reserved
+            words, such as "csv", "pdf", "xml", "xls" and "xlsx" and are
+            used to activate default configurations (e.g. mimeType,
+            built-in export classes)</li>
+         <li>Added support for landscape orientation when exporting in PDF (overloadable with JSP/Thymeleaf attributes)</li>
+         <li>Fixed issue with export URL: now both custom and default export URL are updated with the parameter telling Dandelion to disable the asset filter</li>
+         <li>Modified the custom export function name: the name now contains only the table id, without "oTable"</li>
+         <li>The autoSize option is now set to true by default (XLS and XLSX export only)</li>
+         <li>Improved export feature when using controller
+            <ul>
+               <li>The <code>ExportConf <a title="Source" href="https://github.com/dandelion/dandelion-datatables/blob/dandelion-datatables-0.10.0/datatables-core/src/main/java/com/github/dandelion/datatables/core/export/ExportConf.Builder.java"><i class="fa fa-github"></i></a> <a title="Javadoc" href="/datatables/releases/0.10.0/javadoc/datatables-core/com/github/dandelion/datatables/core/export/ExportConf.Builder.html"><i class="fa fa-book"></i></a></code> instance built with any controller is now optional. By default, the parameter set via the JSP taglib / Thymeleaf dialect will be used to initialize an <code>ExportConf <a title="Source" href="https://github.com/dandelion/dandelion-datatables/blob/dandelion-datatables-0.10.0/datatables-core/src/main/java/com/github/dandelion/datatables/core/export/ExportConf.Builder.java"><i class="fa fa-github"></i></a> <a title="Javadoc" href="/datatables/releases/0.10.0/javadoc/datatables-core/com/github/dandelion/datatables/core/export/ExportConf.Builder.html"><i class="fa fa-book"></i></a></code> instance.</li>
+               <li><code>ExportConf <a title="Source" href="https://github.com/dandelion/dandelion-datatables/blob/dandelion-datatables-0.10.0/datatables-core/src/main/java/com/github/dandelion/datatables/core/export/ExportConf.Builder.java"><i class="fa fa-github"></i></a> <a title="Javadoc" href="/datatables/releases/0.10.0/javadoc/datatables-core/com/github/dandelion/datatables/core/export/ExportConf.Builder.html"><i class="fa fa-book"></i></a></code> instance built by hand in a controller will override the default <code>ExportConf <a title="Source" href="https://github.com/dandelion/dandelion-datatables/blob/dandelion-datatables-0.10.0/datatables-core/src/main/java/com/github/dandelion/datatables/core/export/ExportConf.Builder.java"><i class="fa fa-github"></i></a> <a title="Javadoc" href="/datatables/releases/0.10.0/javadoc/datatables-core/com/github/dandelion/datatables/core/export/ExportConf.Builder.html"><i class="fa fa-book"></i></a></code> built from the request</li>
+            </ul>
+         </li>
+         <li>URL parameters are now decoded if necessary</li>
+         <li>Refactored the passed export parameters. Now all requests (default or custom export) contains the tableId being exported</li>
+      </ul>
+   </li>
+   <li><strong>AJAX</strong>
+      <ul>
+         <li>Added support for ranges in <code>DatatablesCriterias <a title="Source" href="https://github.com/dandelion/dandelion-datatables/blob/dandelion-datatables-0.10.0/datatables-core/src/main/java/com/github/dandelion/datatables/core/ajax/DatatablesCriterias.java"><i class="fa fa-github"></i></a> <a title="Javadoc" href="/datatables/releases/0.10.0/javadoc/datatables-core/com/github/dandelion/datatables/core/ajax/DatatablesCriterias.html"><i class="fa fa-book"></i></a></code>: the <code>DatatablesCriterias <a title="Source" href="https://github.com/dandelion/dandelion-datatables/blob/dandelion-datatables-0.10.0/datatables-core/src/main/java/com/github/dandelion/datatables/core/ajax/DatatablesCriterias.java"><i class="fa fa-github"></i></a> <a title="Javadoc" href="/datatables/releases/0.10.0/javadoc/datatables-core/com/github/dandelion/datatables/core/ajax/DatatablesCriterias.html"><i class="fa fa-book"></i></a></code> object can now parse range values and update all <code>ColumnDef <a title="Source" href="https://github.com/dandelion/dandelion-datatables/blob/dandelion-datatables-0.10.0/datatables-core/src/main/java/com/github/dandelion/datatables/core/ajax/ColumnDef.SortDirection.java"><i class="fa fa-github"></i></a> <a title="Javadoc" href="/datatables/releases/0.10.0/javadoc/datatables-core/com/github/dandelion/datatables/core/ajax/ColumnDef.SortDirection.html"><i class="fa fa-book"></i></a></code> accordingly</li>
+         <li>Added support for <a href="/datatables/features/ajax/reloading-data.html">data reloading</a></li>
+      </ul>
+   </li>
+   <li><strong>Themes</strong>
+      <ul>
+         <li>Fixed conflict when using the Bootstrap2 theme and a custom pagination type</li>
+         <li>Added a new theme options for <a href="/datatables/features/styling/">Bootstrap Responsive</a></li>
+         <li>Added a new theme for <a href="/datatables/features/styling/">Bootstrap v3</a></li>
+      </ul>
+   </li>
+   <li><strong>Plugins</strong>
+      <ul>
+         <li>All supported DataTables <a href="/datatables/features/plugins">plugins</a> have been updated to their latest version</li>
+      </ul>
+   </li>        
+   <li><strong>Javascript generation</strong>
+      <ul>
+         <li>Cleaned the DataTables generated configuration: unneccessary parameters are non longer generated</li>
+         <li>Added the ability to plug in a custom Javascript generato</li>
+         <li>Refactored the Javascript generation to be able to compute the code before rendering it</li>
+         <li>Refactored the <code>WebResourceGenerator <a title="Source" href="https://github.com/dandelion/dandelion-datatables/blob/dandelion-datatables-0.10.0/datatables-core/src/main/java/com/github/dandelion/datatables/core/generator/WebResourceGenerator.java"><i class="fa fa-github"></i></a> <a title="Javadoc" href="/datatables/releases/0.10.0/javadoc/datatables-core/com/github/dandelion/datatables/core/generator/WebResourceGenerator.html"><i class="fa fa-book"></i></a></code> using the extension mechanism
+            <ul>
+               <li>Added new internal extensions: <code>ExportFeature <a title="Source" href="https://github.com/dandelion/dandelion-datatables/blob/dandelion-datatables-0.10.0/datatables-core/src/main/java/com/github/dandelion/datatables/core/extension/feature/ExportFeature.java"><i class="fa fa-github"></i></a> <a title="Javadoc" href="/datatables/releases/0.10.0/javadoc/datatables-core/com/github/dandelion/datatables/core/extension/feature/ExportFeature.html"><i class="fa fa-book"></i></a></code>, <code>AppearFeature <a title="Source" href="https://github.com/dandelion/dandelion-datatables/blob/dandelion-datatables-0.10.0/datatables-core/src/main/java/com/github/dandelion/datatables/core/extension/feature/AppearFeature.java"><i class="fa fa-github"></i></a> <a title="Javadoc" href="/datatables/releases/0.10.0/javadoc/datatables-core/com/github/dandelion/datatables/core/extension/feature/AppearFeature.html"><i class="fa fa-book"></i></a></code>, <code>ExtraFileFeature <a title="Source" href=""><i class="fa fa-github"></i></a> <a title="Javadoc" href=""><i class="fa fa-book"></i></a></code> and <code>ExtraHtmlFeature <a title="Source" href="https://github.com/dandelion/dandelion-datatables/blob/dandelion-datatables-0.10.0/datatables-core/src/main/java/com/github/dandelion/datatables/core/extension/feature/ExtraHtmlFeature.java"><i class="fa fa-github"></i></a> <a title="Javadoc" href="/datatables/releases/0.10.0/javadoc/datatables-core/com/github/dandelion/datatables/core/extension/feature/ExtraHtmlFeature.html"><i class="fa fa-book"></i></a></code></li>
+               <li>Improved Javascript generation (indentations, CR)</li>
+               <li>A random ID is not needed any longer. Dandelion can properly handle multiple tables on the same page (no more Javascript duplication)</li>
+               <li>Table id security: all special characters are removed when creating the Javascript name but the original one is preserved</li>   
+            </ul>
+         </li>
+      </ul>
+   <li><strong>Refactored exception handling</strong>
+      <ul>
+         <li>All exceptions now extend a new <code>DandelionDatatablesException <a title="Source" href="https://github.com/dandelion/dandelion-datatables/blob/dandelion-datatables-0.10.0/datatables-core/src/main/java/com/github/dandelion/datatables/core/exception/DandelionDatatablesException.java"><i class="fa fa-github"></i></a> <a title="Javadoc" href="/datatables/releases/0.10.0/javadoc/datatables-core/com/github/dandelion/datatables/core/exception/DandelionDatatablesException.html"><i class="fa fa-book"></i></a></code> (RuntimeException)</li>
+         <li>A new <code>ExtraFileNotFoundException <a title="Source" href="https://github.com/dandelion/dandelion-datatables/blob/dandelion-datatables-0.10.0/datatables-core/src/main/java/com/github/dandelion/datatables/core/exception/ExtraFileNotFoundException.java"><i class="fa fa-github"></i></a> <a title="Javadoc" href="/datatables/releases/0.10.0/javadoc/datatables-core/com/github/dandelion/datatables/core/exception/ExtraFileNotFoundException.html"><i class="fa fa-book"></i></a></code> is now thrown when an extra file is not found</li>
+         <li>Better exception handling when the export class is not present in the classpath</li>
+         <li>Better exception handling when a wrong configuration group is activated</li>
+      </ul>
+   </li>
+</ul>
+
+<h3 class="section-title">JSP implementation</h3>
+<ul>
+   <li>Configuration renaming and TLD improvement
+      <ul>
+         <li>The TLD has been refactored with the new attributes and all descriptions have been improved to help the content assist plugins of IDEs</li>
+         <li>Some attributes have been renamed for a better consistency:
+            <ul>
+               <li>sort => sortable</li>
+               <li>paginate => pageable</li>
+               <li>filter => filterable</li>
+               <li>ajax.processing => feature.processing</li>
+            </ul>
+         </li>
+         <li>Generally speaking, <code>&lt;rtexprvalue&gt;true&lt;/rtexprvalue&gt;</code> has been added in the TLD where it was missing</li>
+      </ul>
+   </li>
+   <li>Removed unused attributes and corresponding processors</li>
+   <li>Added new <code>escapeXml</code> attributes in almost all JSP tags. XML escaping is now enabled by default and can be disabled using <code>escapeXml="false"</code></li>
+   <li>Improved column sorting initialization: a new column attribute has been added (sortInitOrder/dt:sortInitOrder) allowing to set the order in which column sorting must be initialized</li>
+   <li>Improved exception handling in JSP tags</li>
+   <li>Added support for dynamic attributes in the <a href="/datatables/docs/ref/jsp/caption.html">CaptionTag</a></li>
+   <li>Removed the <code>extraConf</code> JSP tag and all related resources</li>
+   <li>Replaced the <code>extraFile</code> JSP tag with the new <a href="/datatables/docs/ref/jsp/extrajs.html"><code>&lt;datatables:extraJs&gt;</code></a> tag</li>
+   <li>
+      The <a href="/datatables/docs/ref/jsp/callback.html#function"><code>function</code></a> callback attribute now accepst the <a
+      href="/datatables/features/dandelion/bundle-special-syntax.html">bundle special syntax</a>
+   </li>
+   <li>Changes in attributes
+      <ul>
+         <li>New <a href="/datatables/docs/ref/jsp/column.html#id"><code>id</code></a> column attribute, allowing to assign an ID to each column header</li>
+         <li>New <a href="/datatables/docs/ref/jsp/column.html#filterMinLength"><code>filterMinLength</code></a> column attribute, allowing to trigger the filtering after a minimum number of characters has been reached in a filtering field.</li>
+         <li>New <a href="/datatables/docs/ref/jsp/column.html#filterDelay"><code>filterDelay</code></a> column attribute, allowing to set a delay (in ms) before the AJAX call is performed to obtain data from server</li>
+         <li>New <a href="/datatables/docs/ref/jsp/column.html#filterSelector"><code>filterSelector</code></a> column attribute, allowing </li>
+         <li>New <a href="/datatables/docs/ref/jsp/column.html#filterClearSelector"><code>filterClearSelector</code></a> column attribute, allowing </li>
+         <li>New <a href="/datatables/docs/ref/jsp/column.html#name"><code>name</code></a> column attribute, allowing to apply a name to a column. Used with server-side processing.</li>
+         <li>New <a href="/datatables/docs/ref/jsp/column.html#escapeXml"><code>escapeXml</code></a> column attribute, allowing to disable the XML characters escaping</li>
+         <li>Renamed the <code>sortInit</code> column attribute to <a href="/datatables/docs/ref/jsp/column.html#sortInitDirection"><code>sortInitDirection</code></a></li>
+         <li>New <a href="/datatables/docs/ref/jsp/column.html#sortInitOrder"><code>sortInitOrder</code></a> column attribute, allowing to set the order in which columns must be initialized</li>
+         <li>New <a href="/datatables/docs/ref/jsp/extrahtml.html"><code>&lt;datatables:extraHtml&gt;</code></a> tag, allowing to create DataTables feature plug-ins that can be used to decorate the table. Read more <a href="/datatables/features/advanced/using-extra-html.html">here</a>.</li>
+         <li>New <a href="/datatables/docs/ref/jsp/export.html#orientation"><code>orientation</code></a> export attribute, allowing to change the default PDF orientation</li>
+         <li>New <a href="/datatables/docs/ref/jsp/export.html#fileExtension"><code>fileExtension</code></a> export attribute, allowing to set the extension of the exported file</li>
+         <li>New <a href="/datatables/docs/ref/jsp/export.html#mimeType"><code>mimeType</code></a> export attribute, allowing to set the mime Type of the response when exporting data</li>
+         <li>New <a href="/datatables/docs/ref/jsp/export.html#escapeXml"><code>escapeXml</code></a> export attribute, allowing to disable the XML characters escaping</li>
+         <li>New <a href="/datatables/docs/ref/jsp/table.html#reloadSelector"><code>reloadSelector</code></a> table attribute, allowing to bind a "click" event to element that will trigger the table reloading</li>
+         <li>New <a href="/datatables/docs/ref/jsp/table.html#reloadFunction"><code>reloadFunction</code></a> table attribute, allowing to customize the table reloading</li>
+         <li>New <a href="/datatables/docs/ref/jsp/table.html#escapeXml"><code>escapeXml</code></a> table attribute, allowing to disable the XML characters escaping</li>
+         <li>Renamed the <code>rowIdSufix</code> table attribute to <a href="/datatables/docs/ref/jsp/table.html#rowIdSuffix"><code>rowIdSuffix</code></a></li>
+         <li>Renamed the <code>filter</code> table attribute to <a href="/datatables/docs/ref/jsp/table.html#filterable"><code>filterable</code></a></li>
+         <li>Renamed the <code>sort</code> table attribute to <a href="/datatables/docs/ref/jsp/table.html#sortable"><code>sortable</code></a></li>
+         <li>Renamed the <code>paginate</code> table attribute to <a href="/datatables/docs/ref/jsp/table.html#pageable"><code>pageable</code></a></li>
+         <li>Removed the unused <code>footer</code> table attribute</li>
+         <li>Removed the <code>&lt;datatables:extraConf&gt;</code> tag</li>
+         <li>
+            Removed the <code>cdn</code> table attribute from the taglib: it is now activated
+            by default thanks to the <a
+            href="/dandelion/features/asset-bundles/introducing-asset-bundles.html">bundle mechanism</a>
+            of <a href="/dandelion">Dandelion</a>
+         </li>
+         <li>Removed the <code>exportLinks</code> table attribute from the taglib: export links are now positioned thanks to the <a href="/datatables/docs/ref/jsp/table.html#dom"><code>dom</code></a> table attribute</li>
+         <li>Revmoed the <code>uid</code> column attribute and changed the usage of the <a href="/datatables/docs/ref/jsp/columnhead.html"><code>&lt;datatables:columnHead&gt;</code></a> tag</li>
+      </ul>
+   </li>
+</ul> 
+<ul>
+</ul>
+
+<h3 class="section-title">Thymeleaf implementation</h3> 
+<ul>
+   <li>Added support for Thymeleaf 2.1.x and removed deprecated usage of StandardExpressionProcessor</li>
+   <li>Refactored the Thymeleaf implementation
+      <ul>
+         <li>All abstract processors now contain utilities to facilitate the creation of processors</li>
+         <li>No longer necessary to wrap string values with single quotes, thus alleviating the dialect usage</li>
+         <li>Added new processors allowing to write a "configuring div" inside a template, just before the table tag. This div allows to configure: exports, callback, extraFile and configuration properties.</li>
+         <lI>Comments updated/added in almost all processors</li>
+         <li>Renamed some processors for the sake of consistency</li>
+         <li>Removed all processors related to export and callback (now handled by the new "configuring div")</li>
+         <li>Huge code cleaning</li>
+      </ul>
+   </li>
+   <li>All processors are now well isolated</li>
+   <li>Added support for stateSave using Thymeleaf</li>
+   <li>Renamed some attribute processors to be more consistent with the JSP taglib</li>
+   <li>Added a missing Thymeleaf processor for the fixedHeader plugin</li>
+   <li>Removed unused attributes and corresponding processors (plugins are now enabled thanks to the ext / dt:ext table attribute)</li>
+   <li>Improved column sorting initialization: aA new column attribute has been added (sortInitOrder/dt:sortInitOrder) allowing to set the order in which column sorting must be initialized.</li>
+   <li>Added Thymeleaf support for extraHTML snippets
+   <li>Cleaned ColumnInitializedElProcessor: now, the property, renderFunction and default have their own processor</li>
+   <li>The DataTables defaultContent parameter is now always added</li>
+   <li>Added missing processor for the dt:filterMinLengh column attribute</li>
+   <li>
+      Fixed the scope of application of the dialect: all processors are now applied only if
+      they match a particular context. It prevents bugs when native <code>&lt;table&gt;</code> were
+      being used in the same page
+   </li>
+   
+   <li>Changes in attributes
+      <ul>
+         <li>New <a href="/datatables/docs/ref/thymeleaf/th.html#dt:id"><code>dt:id</code></a> column attribute, allowing to assign an ID to the header cell</li>
+         <li>New <a href="/datatables/docs/ref/thymeleaf/table.html#dt:filterMinLength"><code>dt:filterMinLength</code></a> column attribute, allowing to trigger the filtering after a minimum number of characters has been reached in a filtering field.</li>
+         <li>New <a href="/datatables/docs/ref/thymeleaf/table.html#dt:filterDelay"><code>dt:filterDelay</code></a> column attribute, allowing to set a delay (in ms) before the AJAX call is performed to obtain data from server</li>
+         <li>New <a href="/datatables/docs/ref/thymeleaf/table.html#dt:filterSelector"><code>dt:filterSelector</code></a> column attribute, allowing </li>
+         <li>New <a href="/datatables/docs/ref/thymeleaf/table.html#dt:filterClearSelector"><code>dt:filterClearSelector</code></a> column attribute, allowing </li>
+         <li>New <a href="/datatables/docs/ref/thymeleaf/th.html#dt:name"><code>dt:name</code></a> column attribute, allowing to apply a name to a column. Used with server-side processing.</li>
+         <li>Renamed the <code>sortInit</code> column attribute to <a href="/datatables/docs/ref/thymeleaf/column.html#dt:sortInitDirection"><code>dt:sortInitDirection</code></a></li>
+         <li>New <a href="/datatables/docs/ref/thymeleaf/th.html#dt:sortInitOrder"><code>dt:sortInitOrder</code></a> column attribute, allowing to set the order in which columns must be initialized</li>
+         <li>New <a href="/datatables/docs/ref/thymeleaf/div.html#dt:orientation"><code>dt:orientation</code></a> export attribute, allowing to change the default PDF orientation</li>
+         <li>New <a href="/datatables/docs/ref/thymeleaf/div.html#dt:fileExtension"><code>dt:fileExtension</code></a> export attribute, allowing to set the extension of the exported file</li>
+         <li>New <a href="/datatables/docs/ref/thymeleaf/div.html#dt:mimeType"><code>dt:mimeType</code></a> export attribute, allowing to set the mime Type of the response when exporting data</li>
+         <li>New <a href="/datatables/docs/ref/thymeleaf/table.html#dt:reloadSelector"><code>dt:reloadSelector</code></a> table attribute, allowing to bind a "click" event to element that will trigger the table reloading</li>
+         <li>New <a href="/datatables/docs/ref/thymeleaf/table.html#dt:reloadFunction"><code>dt:reloadFunction</code></a> table attribute, allowing to customize the table reloading</li>
+         <li>Renamed the <code>filter</code> table attribute to <a href="/datatables/docs/ref/thymeleaf/table.html#dt:filterable"><code>dt:filterable</code></a></li>
+         <li>Renamed the <code>sort</code> table attribute to <a href="/datatables/docs/ref/thymeleaf/table.html#dt:sortable"><code>dt:sortable</code></a></li>
+         <li>Renamed the <code>paginate</code> table attribute to <a href="/datatables/docs/ref/thymeleaf/table.html#dt:pageable"><code>dt:pageable</code></a></li>
+         <li>Removed the unused <code>footer</code> table attribute</li>
+         <li>Removed the <code>&lt;datatables:extraConf&gt;</code> tag</li>
+         <li>
+            Removed the <code>dt:cdn</code> table attribute from the dialect: it is now activated
+            by default thanks to the <a
+            href="/dandelion/features/asset-bundles/introducing-asset-bundles.html">scope mechanism</a>
+            of <a href="/dandelion">Dandelion</a>
+         </li>
+         <li>Removed the <code>dt:exportLinks</code> table attribute from the dialect: export links are now positioned using the <a href="/datatables/docs/ref/thymeleaf/table.html#dt:dom"><code>dt:dom</code></a> table attribute</li>
+      </ul>
+   </li>
+</ul>
+
+<h3 class="section-title">Export iText extra</h3> 
+<ul>
+   <li>Better exception handling in the default PDF export class</li>
+</ul>
+
+<h3 class="section-title">Closed issues</h3>
+<ul>
+   <li><a href="https://github.com/dandelion/issues/issues/236">Issue 236</a>: Concurrency bug : Wrong WebResources linked to an HtmlTable</li>
+   <li><a href="https://github.com/dandelion/issues/issues/234">Issue 234</a>: Move the columnHead tag inside the column tag</li>
+   <li><a href="https://github.com/dandelion/issues/issues/233">Issue 233</a>: Use of columnHead tag renders empty header if table has less than 2 rows</li>
+   <li><a href="https://github.com/dandelion/issues/issues/231">Issue 231</a>: Add support for state saving in Thymeleaf</li>
+   <li><a href="https://github.com/dandelion/issues/issues/228">Issue 228</a>: Add support for extraFile in Thymeleaf Dialect</li>
+   <li><a href="https://github.com/dandelion/issues/issues/227">Issue 227</a>: Provide a new configuration option allowing to generate PDF in landscape mode</li>
+   <li><a href="https://github.com/dandelion/issues/issues/226">Issue 226</a>: Escape XML to prevent XSS attacks</li>
+   <li><a href="https://github.com/dandelion/issues/issues/225">Issue 225</a>: NPE with native table with th nodes</li>
+   <li><a href="https://github.com/dandelion/issues/issues/224">Issue 224</a>: BEFORESTARTDOCUMENTREADY does not work.</li>
+   <li><a href="https://github.com/dandelion/issues/issues/223">Issue 223</a>: Add support to export via AJAX when there are multiple tables</li>
+   <li><a href="https://github.com/dandelion/issues/issues/222">Issue 222</a>: Not automatically set as "unsearchable" the hidden columns</li>
+   <li><a href="https://github.com/dandelion/issues/issues/221">Issue 221</a>: Add support for Thymeleaf 2.1</li>
+   <li><a href="https://github.com/dandelion/issues/issues/220">Issue 220</a>: Allow custom order in sorting initialization</li>
+   <li><a href="https://github.com/dandelion/issues/issues/217">Issue 217</a>: Rework on all configuration names and taglib attributes</li>
+   <li><a href="https://github.com/dandelion/issues/issues/216">Issue 216</a>: Fix pipelining issue (pipelining defined but no pipesize)</li>
+   <li><a href="https://github.com/dandelion/issues/issues/215">Issue 215</a>: Export param problem</li>
+   <li><a href="https://github.com/dandelion/issues/issues/214">Issue 214</a>: Async servlet support</li>
+   <li><a href="https://github.com/dandelion/issues/issues/213">Issue 213</a>: Add support for delayed filtering</li>
+   <li><a href="https://github.com/dandelion/issues/issues/208">Issue 208</a>: Add support for dynamic internationalization</li>
+   <li><a href="https://github.com/dandelion/issues/issues/207">Issue 207</a>: Unable to use the DatatablesDialect when using Thymeleaf and the Tiles2 extra</li>
+   <li><a href="https://github.com/dandelion/issues/issues/202">Issue 202</a>: Allow usage of totally custom export</li>
+   <li><a href="https://github.com/dandelion/issues/issues/201">Issue 201</a>: Refactor the links management</li>
+   <li><a href="https://github.com/dandelion/issues/issues/195">Issue 195</a>: Add support for responsive design</li>
+   <li><a href="https://github.com/dandelion/issues/issues/193">Issue 193</a>: Avoid repeating the header again in the empty cells of the filtering bar</li>
+   <li><a href="https://github.com/dandelion/issues/issues/191">Issue 191</a>: Add the ability to use a custom sorting function</li>
+   <li><a href="https://github.com/dandelion/issues/issues/187">Issue 187</a>: Add support for configuration local overloading</li>
+   <li><a href="https://github.com/dandelion/issues/issues/185">Issue 185</a>: Add support for Bootstrap 3</li>
+   <li><a href="https://github.com/dandelion/issues/issues/173">Issue 173</a>: Add support for the id attribute in datatables:column tag</li>
+   <li><a href="https://github.com/dandelion/issues/issues/155">Issue 155</a>: Object Serialization</li>
+   <li><a href="https://github.com/dandelion/issues/issues/129">Issue 129</a>: Table with dash in id is not working</li>
+   <li><a href="https://github.com/dandelion/issues/issues/149">Issue 149</a>: Add support for ColumnHead when working with AJAX sources</li>
+   <li><a href="https://github.com/dandelion/issues/issues/145">Issue 145</a>: Enhancement. Add support for filtering after button click</li>
+   <li><a href="https://github.com/dandelion/issues/issues/80">Issue 80</a>: Connect Dandelion-DataTables to Dandelion</li>
+   <li><a href="https://github.com/dandelion/issues/issues/63">Issue 63</a>: ClassCastException if table is directly under a div which is processed by Tiles</li>
+   <li><a href="https://github.com/dandelion/issues/issues/34">Issue 34</a>: Content assist for the JSP taglib</li>
+</ul>
+         </div>
+         <div class="row-fluid" style="margin-top: 10px;">
+            <a href="/contributing.html#/datatables/releases/0.10.0/index.html" title="Improve this page!" class="btn btn-mini" style="float:right;"><i class="fa fa-edit"></i> Improve this page</a>
+         </div>
+      </div>
+   </div>
+</div>
+   
+   <div class="container-fluid area-footer">     
+      <footer class="footer">
+   <div class="container">
+      <div class="row">
+         <div class="span9">
+            
+            <div class="row-fluid">
+               <div class="span3">
+                  <h3>Dandelion</h3>
+                  <ul>
+                     <li><a href="https://github.com/dandelion"><i class="fa fa-github"></i> Source repository</a></li>
+                     <li><a href="/team"><i class="fa fa-group"></i> Team</a></li>
+                     <li><a href="/roadmap"><i class="fa fa-road"></i> Roadmap</a></li>
+                     <li><a href="/acknowledgements/"><i class="fa fa-info-circle"></i> Acknowledgements</a></li>
+                     <li><a href="/faq"> <i class="fa fa-book"></i> FAQ</a></li>
+                  </ul>
+               </div>
+               <div class="span3">
+                  <h3><i class="fa fa-puzzle-piece"></i> Components</h3>
+                  <ul>
+                     <li><a href="/dandelion">Dandelion-Core</a></li>
+                     <li><a href="/datatables">Dandelion-Datatables</a></li>
+                     <li><a href="/webanalytics">Dandelion-Webanalytics</a></li>
+                  </ul>
+               </div>
+               <div class="span3">
+                  <h3><i class="fa fa-play"></i> Get started</h3>
+                  <ul>
+                     <li><a href="/get-started"> <i class="fa fa-book"></i> Get-started guide</a></li>
+                     <li><a href="https://github.com/dandelion/dandelion-samples"><i class="fa fa-code"></i> Samples</a></li>
+                  </ul>
+               </div>
+               <div class="span3">
+                  <h3><i class="fa fa-beer"></i> Community</h3>
+                  <ul>
+                     <li><a href="/blog"><i class="fa fa-comment-o"></i> Blog</a></li>
+                     <li><a href="http://dandelion-forum.48353.x6.nabble.com/"><i class="fa fa-comments-o"></i> Forum</a></li>
+                     <li><a href="https://twitter.com/dandelion_proj"><i class="fa fa-twitter"></i> Twitter</a></li>
+                  </ul>
+               </div>
+            </div>
+            
+         </div>
+         <div class="span3">
+            <p class="text-right" style="margin-top:10px;">
+               <a href="/"><img src="/assets/images/dandelion/github-dandelion-logo.png" alt="dandelion logo" style="margin-bottom:10px;"/></a>
+               Copyright © The <a href="/team">Dandelion Team</a>
+            </p>
+         </div>
+      </div>
+      <div class="row" style="padding-top:10px;">
+         <div class="span12">
+            <p class="text-center">
+               <strong>Dandelion</strong> and all its components are released under the <a href="http://opensource.org/licenses/BSD-3-Clause">BSD 3-Clause</a> licence. More information <a href="http://www.tldrlegal.com/license/bsd-3-clause-license-(revised)">here</a>.
+            </p>
+         </div>
+      </div>
+   </div>
+</footer>
+   </div>
+   
+   <script src="//cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.min.js"></script>
+   <script src="/assets/js/site-main.js"></script>
+</body>
+</html>

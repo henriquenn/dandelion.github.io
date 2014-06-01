@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <meta charset="utf-8">
+   <title>Dandelion Project</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="web, component, library, assets, datatables, java, javaee, framework, webjars, thymeleaf, jsp, taglib">
+   <meta name="author" content="Dandelion">
+   
+   <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
+   <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
+   <link href="/assets/css/prettify.css" rel="stylesheet">
+   <!--[if lt IE 9]>
+   <script src="/assets/js/html5shiv.js"></script>
+   <![endif]-->
+   
+   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/images/dandelion_square.png">
+   <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/images/dandelion_square.png">
+   <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/images/dandelion_square.png">
+   <link rel="apple-touch-icon-precomposed" href="/assets/images/dandelion_square.png">
+   <link rel="shortcut icon" href="/assets/images/dandelion_square.png">
+   
+   <link href="/assets/css/site-main.css" rel="stylesheet">
+   
+   <script>
+   var _gaq = _gaq || [];
+   _gaq.push([ '_setAccount', 'UA-33818546-8' ]);
+   _gaq.push([ '_setCookiePath', '/dandelion' ]);
+   _gaq.push([ '_trackPageview' ]);
+   (function() {
+      var ga = document.createElement('script');
+      ga.type = 'text/javascript';
+      ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(ga, s);
+   })();
+   </script>
+   
+   <link href="/assets/css/site-component.css" rel="stylesheet">
+   <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+   <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+   <div class="navbar navbar-static-top">
+   <div class="navbar-inner">
+      <div class="container-fluid">
+         <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+         </button>
+         <a href="/dandelion">
+            <div id="logo_container">
+                <img id="logo_image" src="/assets/images/dandelion/github-dandelion-logo.png" alt="dandelion"/>
+                <p id="logo_text">
+                    core
+                </p>
+            </div>
+         </a>
+         <div class="nav-collapse collapse">
+            <ul class="nav pull-right" style="margin-bottom: 5px; margin-top: 10px;">
+               <li class="text-center"><a href="/"><i class="fa fa-home fa-3x"></i><br/>Home</a></li>
+               <li class="text-center"><a href="http://dandelion-forum.48353.x6.nabble.com/Dandelion-f295.html"><i class="fa fa-comments-o fa-3x"></i><br />Forum</a></li>
+               <li class="text-center"><a href="/blog"><i class="fa fa-comment-o fa-3x"></i><br />Blog</a></li>
+               <li class="text-center"><a href="/faq"><i class="fa fa-book fa-3x"></i><br />FAQ</a></li>
+               <li class="text-center"><a href="/roadmap"><i class="fa fa-road fa-3x"></i><br />Roadmap</a></li>
+            </ul>
+         </div>
+      </div>
+   </div>
+</div>
+
+   <div class="container-fluid container-component">
+   <div class="row-fluid">
+      <div class="span3">
+         <div class="well sidebar-nav">
+
+            <ul class="nav nav-list">
+               <h5>Overview</h5>
+               <li >
+                  <a href="/dandelion"><i class="fa fa-home"></i> Dandelion-Core</a>
+               </li>
+               <li>
+                  <a href="https://github.com/dandelion/dandelion-samples/tree/master/dandelion" title="Samples" target="_blank"> <i class="fa fa-code"></i> Samples</a>
+               </li>
+               <li  class="active">
+                  <a href="/dandelion/releases/" title="Releases"> <i class="fa fa-tags"></i> Releases</a>
+               </li>
+               
+               <h5>Documentation</h5>
+               <li >
+                  <a href="/dandelion/docs/installation/" title="Installation"><i class="fa fa-wrench"></i> Installation guides</a>
+                  
+               </li>
+               <li >
+                  <a href="/dandelion/docs/ref/jsp/" title="JSP taglib"><i class="fa fa-book"></i> JSP taglib reference</a>
+                  
+               </li>
+               <li >
+                  <a href="/dandelion/docs/ref/thymeleaf/" title="Thymeleaf dialect"><i class="fa fa-book"></i> Thymeleaf dialect reference</a>
+               </li>
+               <li >
+                  <a href="/dandelion/docs/ref/configuration/" title="Configuration"><i class="fa fa-book"></i> Configuration reference</a>
+               </li>
+                              
+               <h5>Features</h5>
+               <li >
+                  <a href="/dandelion/features/asset-bundles/" title="Asset Bundles">Asset bundles</a>
+                  
+               </li>
+               <li >
+                  <a href="/dandelion/features/bundle-loaders/" title="Bundle loaders">Bundle loaders</a>
+                  
+               </li>
+               <li >
+                  <a href="/dandelion/features/asset-locators/" title="Assets locators">Asset locators</a>
+                  
+               </li>
+               <li >
+                  <a href="/dandelion/features/asset-processors/" title="Assets processors">Asset processors</a>
+                  
+               </li>
+               <li >
+                  <a href="/dandelion/features/asset-caching/" title="Asset caching">Asset caching</a>
+                  
+               </li>
+               <li >
+                  <a href="/dandelion/features/configuration/" title="Configuration"> Configuration</a>
+                  
+               </li>
+               <li >
+                  <a href="/dandelion/features/development-mode/" title="Development mode"> Development mode</a>
+                  
+               </li>
+               <li >
+                  <a href="/dandelion/features/production-mode/" title="Development mode"> Production mode</a>
+                  
+               </li>
+               
+               <h5>Development</h5>
+               <li>
+                  <a href="https://github.com/dandelion/dandelion" alt="Dandelion-Core sources" title="Sources" target="_blank"><i class="fa fa-github"></i> Sources</a>
+               </li>
+               <li>
+                  <a href="https://dandelion.ci.cloudbees.com/" title="Continuous integration" target="_blank"><i class="fa fa-cogs"></i> Continuous integration</a>
+               </li>
+               <li>
+                  <a href="/faq/#contributing" title="Contributing"><i class="fa fa-heart"></i> Contributing</a>
+               </li>
+            </ul>
+         </div>
+      </div>
+      <div class="span9">
+         <div class="row-fluid">
+            <ul class="breadcrumb hidden-phone">
+   <li><a href="/"><i class="fa fa-home"></i></a></li>
+   <li><span class="divider">|</span><a href="/dandelion">Dandelion-Core</a></li>
+     
+   
+   <li><span class="divider">|</span><a href="/dandelion/releases">Releases</a></li>
+   
+
+   
+   <li><span class="divider">|</span><a href="/dandelion/releases/0.10.0">0.10.0</a></li>
+   
+     
+   
+   
+   
+   
+   <li class="pull-right" style="margin-left:5px;">
+      <form class="custom-form-search" action="http://google.com/search" method="get" style="margin:0;">
+         <input type="hidden" name="q" value="site:dandelion.github.io/dandelion">
+         <div class="input-append">
+            <input type="text" class="input-medium" name="q" placeholder="Search via Google" />
+            <button type="submit" class="btn"><i class="icon-search"></i></button>
+         </div>
+      </form>
+   </li>
+   
+   <li class="pull-right">
+      Latest release: <a href="/dandelion/releases/0.10.0/">0.10.0</a>
+      <span class="divider">|</span>
+   </li>
+</ul>
+
+
+            <h2 class="page-title">Dandelion 0.10.0 change log<span class="release-date">05-24-2014</span></h2>
+
+<h3 class="section-title">Core</h3>
+<ul>
+   <li>
+      Lots of internal features are now based on the <a
+      href="http://docs.oracle.com/javase/6/docs/api/java/util/ServiceLoader.html">Service
+         Provider Interface API</a>: <a
+      href="/dandelion/features/asset-processors/">processors</a>, <a
+      href="/dandelion/features/asset-locators/">locators</a>, <a
+      href="/dandelion/features/bundle-loaders/">bundle loaders</a> and
+      <a href="/dandelion/features/asset-caching/">caching</a> in order
+      to provide plenty of extension points
+   </li>
+   <li><strong>Main</strong>
+      <ul>
+         <li>The asset rendering is now based on a servlet filter (<code>DandelionFilter <a title="Source" href="https://github.com/dandelion/dandelion/blob/dandelion-0.10.0/dandelion-core/src/main/java/com/github/dandelion/core/web/DandelionFilter.java"><i class="fa fa-github"></i></a> <a title="Javadoc" href="/dandelion/releases/0.10.0/javadoc/dandelion-core/com/github/dandelion/core/web/DandelionFilter.html"><i class="fa fa-book"></i></a></code>),
+      which optimally injects <code>&lt;script&gt;</code> and <code>&lt;link&gt;</code> tags into
+      the page.</li>
+         <li>
+            The old DatatablesController (used to serve generated assets of the Dandelion-Datatables
+            component) has been repatriated to Dandelion core, renamed to <code>DandelionServlet <a title="Source" href="https://github.com/dandelion/dandelion/blob/dandelion-0.10.0/dandelion-core/src/main/java/com/github/dandelion/core/web/DandelionServlet.java"><i class="fa fa-github"></i></a> <a title="Javadoc" href="/dandelion/releases/0.10.0/javadoc/dandelion-core/com/github/dandelion/core/web/DandelionServlet.html"><i class="fa fa-book"></i></a></code> and is now
+            used to serve all kinds of generated assets.
+         </li>
+         <li>Dropped Servlet 3.x annotations usage in favour of plain old XML.</li>
+         <li>Asset bundle are no longer based on a tree but on a <a
+            href="http://en.wikipedia.org/wiki/Directed_acyclic_graph">DAG</a>. The old <code>parent</code> properties of
+            bundles has been replaced by the <code>dependencies</code>
+            attribute.
+         </li>
+         <li>
+            New utilities related to assets and bundles:
+            <ul>
+               <li>Ability to exclude assets by type</li>
+               <li>The asset position can be forced using a new JSON parameter (dom)</li>
+               <li>Possibility to <a
+                  href="/dandelion/features/asset-bundles/interacting-with-the-asset-bundles/using-the-configuration-properties.html">activate
+                     bundles permanently</a> (e.g. handy for global CSS
+                  files)
+               </li>
+            </ul>
+         </li>
+         <li>
+            The URL of generated asset is now built with a
+            SHA1 key instead of the old parameters previously used in Dandelion-Datatables.
+         </li>
+      </ul>
+   </li>
+   <li><strong>Bundle loaders</strong>
+      <ul>
+         <li>
+            All <a href="/dandelion/features/bundle-loaders/introducing-bundle-loaders.html">*BundleLoader</a>
+            are now mutually exclusives in order to be able to disable one or more loaders (useful for
+            Dandelion integration in legacy apps)
+         </li>
+         <li>Bundle and asset names are not case sensitive any longer</li>
+      </ul>
+   </li>
+   <li><strong>Asset locators</strong>
+      <ul>
+         <li>Fixed issue with protocol-relative URLs used as locations (aka //cdn)</li>
+         <li>Added a new <a
+            href="/dandelion/features/asset-locators/built-in/cdn-locator.html">CdnLocator</a>
+            used to rewrite URLs in CSS files. Automatically activated when
+            minification is enabled.
+         </li>
+         <li>Improved the <i>dandelion-webjars</i> extra. See below.</li>
+      </ul>
+   </li>
+   <li><strong>Asset processors</strong>
+      <ul>
+         <li>
+            New asset processors available for JS and CSS compression (based on YUICompressor). Read
+            more <a href="/dandelion/features/asset-processors/built-in/">here</a>.
+         </li>
+      </ul>
+   </li>
+   <li><strong>Configuration</strong>
+      <ul>
+         <li>Lots of new <a
+            href="/dandelion/docs/ref/configuration/">configuration
+               properties</a></li>
+         <li>All configuration properties can now be loaded using <a
+            href="/dandelion/features/configuration/configuration-properties.html">different
+               strategies</a></li>
+      </ul>
+   </li>
+   <li><strong>Development/production mode</strong>
+      <ul>
+         <li><a href="/dandelion/features/development-mode">Development mode</a> refactored to avoid
+      re-initializing the bundle graph at each request thus drastically improving performance</li>
+         <li>Added a <a
+            href="/dandelion/features/development-mode/bundle-graph-viewer.html">bundle
+               graph viewer</a>, allowing to visualize how Dandelion deals
+            with your current request
+         </li>
+         <li>Added support for manual <a
+            href="/dandelion/features/development-mode/bundle-reloading.html">bundle
+               reloading</a>
+         </li>
+         <li>New <a
+            href="/dandelion/features/production-mode/caching-policy.html">caching
+               policy</a> applied when using the <i>production mode</i></li>
+      </ul>
+   </li>
+   <li><strong>JSP taglib / Thymeleaf dialect</strong>
+      <ul>
+         <li>The <a href="/dandelion/docs/ref/jsp/">JSP taglib</a>
+            and <a href="/dandelion/docs/ref/thymeleaf/">Thymeleaf
+               dialect</a> have been fully refactored.
+         </li>
+         <li>
+            Added support for the <a href="https://github.com/thymeleaf/thymeleaf-extras-eclipse-plugin">content assist Eclipse plugin</a>.
+         </li>
+      </ul>
+   </li>
+</ul>
+
+<h3 class="section-title">Ehcache extra</h3>
+<ul>
+   <li>
+      A new dandelion-ehcache module has been added, allowing to plug
+      an <a
+      href="/dandelion/features/asset-caching/built-in/ehcache.html">Ehcache-based
+         cache</a> in the Dandelion <a
+      href="/dandelion/features/asset-caching/introducing-asset-caching.html">cache
+         system</a>.
+   </li>
+</ul>
+
+<h3 class="section-title">Webjars extra</h3>
+<ul>
+   <li>The Webjars extra now provides <a href="/dandelion/features/asset-locators/built-in/webjar-locator.html">two different locators</a>,
+      automatically picked up depending on the version of the Servlet
+      API supported by the server</li>
+</ul>
+
+<h3 class="section-title">Closed issues</h3>
+<p>
+   <ul>
+      <li><a href="https://github.com/dandelion/issues/issues/7">Issue 7</a>: Provide multiple configuration points for the dandelion.dev.mode</li>
+      <li><a href="https://github.com/dandelion/issues/issues/2">Issue 2</a>: Content assist for the Dandelion dialect (Eclipse)</li>
+   </ul>
+</p>
+
+         </div>
+         <div class="row-fluid">
+            <a href="/contributing.html#/dandelion/releases/0.10.0/index.html" title="Improve this page!" class="btn btn-mini" style="float:right;"><i class="fa fa-edit"></i> Improve this page</a>
+         </div>
+      </div>
+   </div>
+</div>
+   
+   <div class="container-fluid area-footer">     
+      <footer class="footer">
+   <div class="container">
+      <div class="row">
+         <div class="span9">
+            
+            <div class="row-fluid">
+               <div class="span3">
+                  <h3>Dandelion</h3>
+                  <ul>
+                     <li><a href="https://github.com/dandelion"><i class="fa fa-github"></i> Source repository</a></li>
+                     <li><a href="/team"><i class="fa fa-group"></i> Team</a></li>
+                     <li><a href="/roadmap"><i class="fa fa-road"></i> Roadmap</a></li>
+                     <li><a href="/acknowledgements/"><i class="fa fa-info-circle"></i> Acknowledgements</a></li>
+                     <li><a href="/faq"> <i class="fa fa-book"></i> FAQ</a></li>
+                  </ul>
+               </div>
+               <div class="span3">
+                  <h3><i class="fa fa-puzzle-piece"></i> Components</h3>
+                  <ul>
+                     <li><a href="/dandelion">Dandelion-Core</a></li>
+                     <li><a href="/datatables">Dandelion-Datatables</a></li>
+                     <li><a href="/webanalytics">Dandelion-Webanalytics</a></li>
+                  </ul>
+               </div>
+               <div class="span3">
+                  <h3><i class="fa fa-play"></i> Get started</h3>
+                  <ul>
+                     <li><a href="/get-started"> <i class="fa fa-book"></i> Get-started guide</a></li>
+                     <li><a href="https://github.com/dandelion/dandelion-samples"><i class="fa fa-code"></i> Samples</a></li>
+                  </ul>
+               </div>
+               <div class="span3">
+                  <h3><i class="fa fa-beer"></i> Community</h3>
+                  <ul>
+                     <li><a href="/blog"><i class="fa fa-comment-o"></i> Blog</a></li>
+                     <li><a href="http://dandelion-forum.48353.x6.nabble.com/"><i class="fa fa-comments-o"></i> Forum</a></li>
+                     <li><a href="https://twitter.com/dandelion_proj"><i class="fa fa-twitter"></i> Twitter</a></li>
+                  </ul>
+               </div>
+            </div>
+            
+         </div>
+         <div class="span3">
+            <p class="text-right" style="margin-top:10px;">
+               <a href="/"><img src="/assets/images/dandelion/github-dandelion-logo.png" alt="dandelion logo" style="margin-bottom:10px;"/></a>
+               Copyright © The <a href="/team">Dandelion Team</a>
+            </p>
+         </div>
+      </div>
+      <div class="row" style="padding-top:10px;">
+         <div class="span12">
+            <p class="text-center">
+               <strong>Dandelion</strong> and all its components are released under the <a href="http://opensource.org/licenses/BSD-3-Clause">BSD 3-Clause</a> licence. More information <a href="http://www.tldrlegal.com/license/bsd-3-clause-license-(revised)">here</a>.
+            </p>
+         </div>
+      </div>
+   </div>
+</footer>
+   </div>
+   
+   <script src="//cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.min.js"></script>
+   <script src="/assets/js/site-main.js"></script>
+</body>
+</html>

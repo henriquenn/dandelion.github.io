@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <meta charset="utf-8">
+   <title>Dandelion Project</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="web, component, library, assets, datatables, java, javaee, framework, webjars, thymeleaf, jsp, taglib">
+   <meta name="author" content="Dandelion">
+   
+   <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
+   <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
+   <link href="/assets/css/prettify.css" rel="stylesheet">
+   <!--[if lt IE 9]>
+   <script src="/assets/js/html5shiv.js"></script>
+   <![endif]-->
+   
+   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/images/dandelion_square.png">
+   <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/images/dandelion_square.png">
+   <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/images/dandelion_square.png">
+   <link rel="apple-touch-icon-precomposed" href="/assets/images/dandelion_square.png">
+   <link rel="shortcut icon" href="/assets/images/dandelion_square.png">
+   
+   <link href="/assets/css/site-main.css" rel="stylesheet">
+   
+   <script>
+   var _gaq = _gaq || [];
+   _gaq.push([ '_setAccount', 'UA-33818546-8' ]);
+   _gaq.push([ '_setCookiePath', '/datatables' ]);
+   _gaq.push([ '_trackPageview' ]);
+   (function() {
+      var ga = document.createElement('script');
+      ga.type = 'text/javascript';
+      ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(ga, s);
+   })();
+   </script>
+   
+   <link href="/assets/css/site-component.css" rel="stylesheet">
+   <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+   <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+   <div class="navbar navbar-static-top">
+   <div class="navbar-inner">
+      <div class="container-fluid">
+         <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+         </button>
+         <a href="/datatables">
+            <div id="logo_container">
+                <img id="logo_image" src="/assets/images/dandelion/github-dandelion-logo.png" alt="dandelion"/>
+                <p id="logo_text">
+                    datatables
+                </p>
+            </div>
+         </a>
+         <div class="nav-collapse collapse">
+            <ul class="nav pull-right" style="margin-bottom: 5px; margin-top: 10px;">
+               <li class="text-center"><a href="/"><i class="fa fa-home fa-3x"></i><br/>Home</a></li>
+               <li class="text-center"><a href="http://dandelion-forum.48353.x6.nabble.com/Dandelion-Datatables-f3.html"><i class="fa fa-comments-o fa-3x"></i><br />Forum</a></li>
+               <li class="text-center"><a href="/blog"><i class="fa fa-comment-o fa-3x"></i><br />Blog</a></li>
+               <li class="text-center"><a href="/faq"><i class="fa fa-book fa-3x"></i><br />FAQ</a></li>
+               <li class="text-center"><a href="/roadmap"><i class="fa fa-road fa-3x"></i><br />Roadmap</a></li>
+            </ul>
+         </div>
+      </div>
+   </div>
+</div>
+
+   <div class="container-fluid container-component">
+   <div class="row-fluid">
+      <div class="span3">
+         <div class="well sidebar-nav">
+      
+            <ul class="nav nav-list">
+               <h5>Overview</h5>
+               <li >
+                  <a href="/datatables"><i class="fa fa-home"></i> Dandelion-Datatables</a>
+               </li>
+               <li>
+                  <a href="https://github.com/dandelion/dandelion-samples/tree/master/datatables" title="Samples" target="_blank"> <i class="fa fa-code"></i> Samples</a>
+               </li>
+               <li >
+                  <a href="/datatables/releases/" title="Download"> <i class="fa fa-tags"></i> Releases</a>
+               </li>
+               <li >
+                  <a href="/datatables/docs/around-the-web/" title="Around the web"> <i class="fa fa-globe"></i> Around the web</a>
+               </li>
+               
+               <h5>Documentation</h5>
+               <li >
+                  <a href="/datatables/docs/installation/" title="Installation"><i class="fa fa-wrench"></i> Installation guides</a>
+                  
+               </li>
+               <li >
+                  <a href="/datatables/docs/ref/jsp/" title="JSP taglib"><i class="fa fa-book"></i> JSP taglib reference</a>
+                  
+               </li>
+               <li >
+                  <a href="/datatables/docs/ref/thymeleaf/" title="Thymeleaf dialect"><i class="fa fa-book"></i> Thymeleaf dialect reference</a>
+                  
+               </li>
+               <li >
+                  <a href="/datatables/docs/ref/configuration/" title="Configuration"><i class="fa fa-book"></i> Configuration reference</a>
+               </li>
+               <li >
+                  <a href="/datatables/docs/ref/bundles"><i class="fa fa-book"></i> Bundle reference</a>
+               </li>
+               <li >
+                  <a href="/datatables/docs/migration/" title="Migration guides"> <i class="fa fa-plane"></i> Migration guides</a>
+               </li>
+               
+               <h5>Features</h5>
+               <li >
+                  <a href="/datatables/features/dandelion/" title="Dandelion features"> <i class="fa fa-sitemap"></i> Dandelion</a>
+                  
+               </li>
+               <li >
+                  <a href="/datatables/features/basics/" title="Basics"> <i class="fa fa-leaf"></i> Basics</a>
+                  
+               </li>
+               <li >
+                  <a href="/datatables/features/styling/" title="Styling"> <i class="fa fa-magic"></i> Styling</a>
+                  
+               </li>
+               <li  class="active">
+                  <a href="/datatables/features/export/" title="Export"> <i class="fa fa-print"></i> Export</a>
+                  
+                  <ul class="nav nav-list">
+                     <li >
+                        <a href="/datatables/features/export/introducing-the-export-feature.html"><i class="fa fa-angle-double-right"></i> Introducing the export feature</a>
+                     </li>
+                     <li class="active">
+                        <a href="/datatables/features/export/filter-based-exports.html"><i class="fa fa-angle-double-right"></i> Filter-based exports</a>
+                     </li>
+                     <li >
+                        <a href="/datatables/features/export/controller-based-exports.html"><i class="fa fa-angle-double-right"></i> Controller-based exports</a>
+                     </li>
+                     <li >
+                        <a href="/datatables/features/export/customizing-export-links.html"><i class="fa fa-angle-double-right"></i> Customizing export links</a>
+                     </li>
+                     <li >
+                        <a href="/datatables/features/export/customizing-export-url.html"><i class="fa fa-angle-double-right"></i> Customizing export URL</a>
+                     </li>
+                     <li >
+                        <a href="/datatables/features/export/plugging-in-your-onw-export-class.html"><i class="fa fa-angle-double-right"></i> Plugging-in your own export class</a>
+                     </li>
+                  </ul>
+                  
+               </li>
+               <li >
+                  <a href="/datatables/features/advanced/" title="Advanced usage"> <i class="fa fa-fire"></i> Advanced usage</a>
+                  
+               </li>
+               <li >
+                  <a href="/datatables/features/ajax/" title="AJAX"> <i class="fa fa-refresh"></i> AJAX</a>
+                  
+               </li>
+               <li >
+                  <a href="/datatables/features/i18n/" title="Internationalization"> <i class="fa fa-flag-o"></i> I18n</a>
+                  
+               </li>
+               <li >
+                  <a href="/datatables/features/plugins/" title="Plugins"> <i class="fa fa-plus"></i> Plugins</a>
+                  
+               </li>
+               <li >
+                  <a href="/datatables/features/configuration/" title="Configuration"> <i class="fa fa-cog"></i> Configuration</a>
+                  
+               </li>
+               <li >
+                  <a href="/datatables/features/extension/" title="Extension"> <i class="fa fa-puzzle-piece"></i> Extension</a>
+                  
+               </li>
+               <h5>Development</h5>
+               <li>
+                  <a href="https://github.com/dandelion/dandelion-datatables" alt="Dandelion-Datatables sources" title="Sources" target="_blank"><i class="fa fa-github"></i> Sources</a>
+               </li>
+               <li>
+                  <a href="https://dandelion.ci.cloudbees.com/" title="Continuous integration" target="_blank"><i class="fa fa-cogs"></i> Continuous integration</a>
+               </li>
+               <li>
+                  <a href="/faq/#contributing" title="Contributing"><i class="fa fa-heart"></i> Contributing</a>
+               </li>
+            </ul>
+         </div>
+      </div>
+      <div class="span9">
+         <div class="row-fluid" style="min-height:500px;">
+            <ul class="breadcrumb hidden-phone">
+   <li><a href="/"><i class="fa fa-home"></i></a></li>
+   <li><span class="divider">|</span><a href="/datatables">Dandelion-Datatables</a></li>
+     
+   
+   <li><span class="divider">|</span><a href="/datatables/"></a></li>
+   
+
+   
+   <li><span class="divider">|</span><a href="/datatables//export">Export</a></li>
+   
+     
+   
+   <li><span class="divider">|</span><a href="/datatables//export/filter-based-exports">Filter-based exports</a></li>
+   
+   
+   
+   
+   <li class="pull-right" style="margin-left:5px;">
+      <form class="custom-form-search" action="http://google.com/search" method="get" style="margin:0;">
+         <input type="hidden" name="q" value="site:dandelion.github.io/datatables">
+         <div class="input-append">
+            <input type="text" class="input-medium" name="q" placeholder="Search via Google" />
+            <button type="submit" class="btn"><i class="icon-search"></i></button>
+         </div>
+      </form>
+   </li>
+   
+   <li class="pull-right">
+      Latest release: <a href="/datatables/releases/0.10.0/">0.10.0</a>
+      <span class="divider">|</span>
+   </li>
+</ul>
+
+
+            <h2 class="page-title">Filter-based exports</h2>
+<p>The export feature was initially designed to work with a servlet
+   filter. The principle is simple: once you click on an export link,
+   the configured servlet filter intercepts the request, retrieves the
+   table and renders it in the chosen format instead of displaying
+   it in a view. 
+</p>
+<p>
+   This is the fastest way to make exports work. But in return, you
+   won't be able to customize a lot the output file. For example, all data will be
+   rendered, whether the table is paged or not. The same applies for filtering and sorting.
+</p>
+<p>
+   Here follows the guide to set up the filter.   
+</p>
+
+<h3 class="section-title" id="sutsf">Setting up the servlet filter</h3>
+<p>
+   You just need to declare the Datatables servlet filter in your <code>web.xml</code> file as follows:
+</p>
+<pre class="prettyprint">
+&lt;!-- Dandelion-Datatables filter used for basic export -->
+&lt;filter>
+   &lt;filter-name>datatables&lt;/filter-name>
+   &lt;filter-class>com.github.dandelion.datatables.core.web.filter.DatatablesFilter&lt;/filter-class>
+&lt;/filter>
+&lt;filter-mapping>
+   &lt;filter-name>datatables&lt;/filter-name>
+   &lt;url-pattern>/*&lt;/url-pattern>
+&lt;/filter-mapping> 
+</pre>
+
+<p class="alert alert-warn">
+   <strong><i class="fa fa-warning fa-2x"></i></strong> Ensure to
+   declare the Datatables servlet filter
+   <strong>after any other filter</strong> that is used to encode your
+   data, as the typical
+   <strong>org.springframework.web.filter.CharacterEncodingFilter</strong>
+</p>
+<p>
+   Once the servlet filter configured, you have to enable export locally, in your table. 
+</p>
+
+<h3 class="section-title" id="eae">Activating export</h3>
+<h4>Using JSP</h4>
+<p>
+   To activate the export, just set the <a href="/datatables/docs/ref/jsp/table.html#export"><code>export</code></a> table attribute to <code>csv</code> or whatever format you need. An export link will be generated (defaults to top right of the table).
+</p>
+<p>
+   You can of course set multiple formats, just use a comma as a separator.
+</p>
+<pre class="prettyprint">
+&lt;datatables:table id="myTableId" data="${persons}" row="person" export="csv,pdf">
+   &lt;datatables:column title="Id" property="id" />
+   &lt;datatables:column title="FirstName" property="firstName" />
+   &lt;datatables:column title="LastName" property="lastName" />
+   &lt;datatables:column title="City" property="address.town.name" />
+   &lt;datatables:column title="Mail">
+      &lt;a href="mailto:${person.mail}">${person.mail}&lt;/a>
+   &lt;/datatables:column>
+&lt;/datatables:table>
+</pre>
+
+<h4>Using Thymeleaf</h4>
+<p>
+   With Thymeleaf, use the <a href="/datatables/docs/ref/thymeleaf/table.html#dt:export"><code>dt:export</code></a> table attribute in the same manner.
+</p>
+<pre class="prettyprint">
+&lt;table id="myTable" dt:table="true" dt:export="csv,pdf">
+   &lt;thead>
+      &lt;tr>
+         &lt;th>Id&lt;/th>
+         &lt;th>Firstname&lt;/th>
+         &lt;th>Lastname&lt;/th>
+         &lt;th>City&lt;/th>
+         &lt;th>Mail&lt;/th>
+      &lt;/tr>
+   &lt;/thead>
+   &lt;tbody>
+      &lt;tr th:each="person : ${persons}">
+         &lt;td th:text="${person.id}">1&lt;/td>
+         &lt;td th:text="${person.firstName}">John&lt;/td>
+         &lt;td th:text="${person.lastName}">Doe&lt;/td>
+         &lt;td th:text="${person.address.town.name}">Nobody knows!&lt;/td>
+         &lt;td>&lt;a th:href="${'mailto:' + person.mail}" th:text="${person.mail}">john@doe.com&lt;/a>&lt;/td>
+      &lt;/tr>
+   &lt;/tbody>
+&lt;/table>
+</pre>
+
+<p class="alert alert-info">
+   <strong><i class="fa fa-info-circle fa-2x"></i></strong>&nbsp;
+   Note that by default, export links are a bit ugly. Indeed,
+   Dandelion-Datatables generates unstyled links by default in order to
+   be as flexible as possible but you can of course
+   <a href="customizing-export-links.html">adapt the links</a> to fit
+   your needs.
+</p>
+
+
+<h3 class="section-title" id="sutsf">Customizing the export content</h3>
+<p>
+   Even if filter-based exports provides less flexibility than
+   <a href="/datatables/features/export/controller-based-exports.html">controller-based</a>
+   ones, Dandelion-Datatables has some options allowing you to configure
+   the export content just by using either the JSP taglib or the
+   Thymeleaf dialect.
+</p>
+
+<h4>Using JSP</h4>
+<p>
+   This is done thanks to the <a href="/datatables/docs/ref/jsp/column.html#display"><code>display</code></a> column
+   attribute. Just precise in this attribute in what format you want the
+   corresponding content to appear. The format(s) you will precise must
+   match with these set in the <a href="/datatables/docs/ref/jsp/table.html#export"><code>export</code></a> attribute.
+</p>
+<p>
+   For instance, setting the <a href="/datatables/docs/ref/jsp/column.html#display"><code>display</code></a> attribute to
+   <code>html</code>
+   means that the corresponding column will only appear in the HTML
+   source code, not in the export file.
+</p> 
+<p>
+   In the following example, we don't want HTML code to be displayed in
+   the exported
+   <strong>Mail</strong> column. That's why a second "Mail" column is
+   added with the <a href="/datatables/docs/ref/jsp/column.html#display"><code>display</code></a> attribute set to
+   <code>csv,xls</code>
+   (i.e. not
+   <code>html</code>
+   ) and with just the bean's property inside (thanks to the <a href="/datatables/docs/ref/jsp/column.html#property"><code>property</code></a> attribute).
+</p>
+<pre class="prettyprint">
+&lt;datatables:table id="myTableId" data="${persons}" row="person" export="csv,xls">
+   &lt;datatables:column title="Id" property="id" />
+   &lt;datatables:column title="FirstName" property="firstName" />
+   &lt;datatables:column title="LastName" property="lastName" />
+   &lt;datatables:column title="City" property="address.town.name" display="html" />
+   &lt;datatables:column title="Mail" display="html">
+      &lt;a href="mailto:${person.mail}">${person.mail}&lt;/a>
+   &lt;/datatables:column>
+   &lt;datatables:column title="Mail" property="mail" display="csv,xls" />
+   &lt;datatables:export type="xls" includeHeader="true" fileName="my-export-name" cssClass="btn" label="xls" />
+&lt;/datatables:table>
+</pre>
+
+<h4>Using Thymeleaf</h4>
+<p>
+   Using Thymeleaf, just use the <a href="/datatables/docs/ref/thymeleaf/td.html#dt:csv"><code>dt:csv</code></a> (or <code>dt:*</code>) TD attribute to adapt the cell's content in the corresponding format.
+</p>
+<pre class="prettyprint">
+&lt;table id="myTable" dt:table="true" dt:export="pdf,xls,csv">
+   &lt;thead>
+      &lt;tr>
+         &lt;th>Id&lt;/th>
+         &lt;th>Firstname&lt;/th>
+         &lt;th>Lastname&lt;/th>
+         &lt;th>City&lt;/th>
+         &lt;th>Mail&lt;/th>
+      &lt;/tr>
+   &lt;/thead>
+   &lt;tbody>
+      &lt;tr th:each="person : ${persons}">
+         &lt;td th:text="${person?.id}">1&lt;/td>
+         &lt;td th:text="${person?.firstName}">John&lt;/td>
+         &lt;td th:text="${person?.lastName}">Doe&lt;/td>
+         &lt;td th:text="${person?.address?.town?.name}">Nobody knows!&lt;/td>
+         &lt;td dt:csv="${person?.mail}" dt:xls="${person?.mail}">
+            &lt;a th:href="${'mailto:' + person?.mail}" th:text="${person?.mail}">john@doe.com&lt;/a>
+         &lt;/td>
+      &lt;/tr>
+   &lt;/tbody>
+&lt;/table>
+</pre>
+
+<h3 class="section-title" id="ueo">Using export options</h3>
+<p>
+   Finally, some extra options are available in order to configure the export.
+</p>
+<p>
+   Using JSP, all options can be passed in the <a href="/datatables/docs/ref/jsp/export.html"><code>&lt;datatables:export&gt;</code></a> tag.
+</p>
+<p>
+   Using Thymeleaf, you'll have to use the
+   <a href="/datatables/features/advanced/configuration-div.html">configuration
+      div</a> introduced in the v0.10.0.
+</p>
+<table class="table table-striped table-hover">
+   <thead>
+      <tr>
+         <th>Option</th>
+         <th>Description</th>
+         <th>JSP</th>
+         <th>Thymeleaf</th>
+         <th>Compatible formats</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>File name</td>
+         <td>Name of the export file (without extension)</td>
+         <td><code>&lt;datatables:export ... fileName="my-export-file" /&gt;</code></td>
+         <td><code>&lt;div dt:confType="export" dt:fileName="my-export-file"&gt;&lt;/div&gt;</code></td>
+         <td>CSV, XML, PDF, XLS, XLSX</td>
+      </tr>
+      <tr>
+         <td>File extension</td>
+         <td>Extension of export file</td>
+         <td><code>&lt;datatables:export ... fileExtension="xls" /&gt;</code></td>
+         <td><code>&lt;div dt:confType="export" dt:fileExtension="xls"&gt;&lt;/div&gt;</code></td>
+         <td>CSV, XML, PDF, XLS, XLSX</td>
+      </tr>
+      <tr>
+         <td>Include header</td>
+         <td>Display/hide the column headers in the export file</td>
+         <td><code>&lt;datatables:export ... includeHeader="true" /&gt;</code></td>
+         <td><code>&lt;div dt:confType="export" dt:includeHeader="true"&gt;&lt;/div&gt;</code></td>
+         <td>CSV, PDF, XLS, XLSX</td>
+      </tr>
+      <tr>
+         <td>Orientation</td>
+         <td>Orientation of the PDF export file</td>
+         <td><code>&lt;datatables:export ... orientation="landscape" /&gt;</code></td>
+         <td><code>&lt;div dt:confType="export" dt:orientation="landscape"&gt;&lt;/div&gt;</code></td>
+         <td>PDF</td>
+      </tr>
+      <tr>
+         <td>Autosize</td>
+         <td>Automatically adapt the cells size according to their content</td>
+         <td><code>&lt;datatables:export ... autoSize="true" /&gt;</code></td>
+         <td><code>&lt;div dt:confType="export" dt:autoSize="true"&gt;&lt;/div&gt;</code></td>
+         <td>XLS, XLSX</td>
+      </tr>   
+   </tbody>
+</table>
+
+         </div>
+         <div class="row-fluid" style="margin-top: 10px;">
+            <a href="/contributing.html#/datatables/features/export/filter-based-exports.html" title="Improve this page!" class="btn btn-mini" style="float:right;"><i class="fa fa-edit"></i> Improve this page</a>
+         </div>
+      </div>
+   </div>
+</div>
+   
+   <div class="container-fluid area-footer">     
+      <footer class="footer">
+   <div class="container">
+      <div class="row">
+         <div class="span9">
+            
+            <div class="row-fluid">
+               <div class="span3">
+                  <h3>Dandelion</h3>
+                  <ul>
+                     <li><a href="https://github.com/dandelion"><i class="fa fa-github"></i> Source repository</a></li>
+                     <li><a href="/team"><i class="fa fa-group"></i> Team</a></li>
+                     <li><a href="/roadmap"><i class="fa fa-road"></i> Roadmap</a></li>
+                     <li><a href="/acknowledgements/"><i class="fa fa-info-circle"></i> Acknowledgements</a></li>
+                     <li><a href="/faq"> <i class="fa fa-book"></i> FAQ</a></li>
+                  </ul>
+               </div>
+               <div class="span3">
+                  <h3><i class="fa fa-puzzle-piece"></i> Components</h3>
+                  <ul>
+                     <li><a href="/dandelion">Dandelion-Core</a></li>
+                     <li><a href="/datatables">Dandelion-Datatables</a></li>
+                     <li><a href="/webanalytics">Dandelion-Webanalytics</a></li>
+                  </ul>
+               </div>
+               <div class="span3">
+                  <h3><i class="fa fa-play"></i> Get started</h3>
+                  <ul>
+                     <li><a href="/get-started"> <i class="fa fa-book"></i> Get-started guide</a></li>
+                     <li><a href="https://github.com/dandelion/dandelion-samples"><i class="fa fa-code"></i> Samples</a></li>
+                  </ul>
+               </div>
+               <div class="span3">
+                  <h3><i class="fa fa-beer"></i> Community</h3>
+                  <ul>
+                     <li><a href="/blog"><i class="fa fa-comment-o"></i> Blog</a></li>
+                     <li><a href="http://dandelion-forum.48353.x6.nabble.com/"><i class="fa fa-comments-o"></i> Forum</a></li>
+                     <li><a href="https://twitter.com/dandelion_proj"><i class="fa fa-twitter"></i> Twitter</a></li>
+                  </ul>
+               </div>
+            </div>
+            
+         </div>
+         <div class="span3">
+            <p class="text-right" style="margin-top:10px;">
+               <a href="/"><img src="/assets/images/dandelion/github-dandelion-logo.png" alt="dandelion logo" style="margin-bottom:10px;"/></a>
+               Copyright © The <a href="/team">Dandelion Team</a>
+            </p>
+         </div>
+      </div>
+      <div class="row" style="padding-top:10px;">
+         <div class="span12">
+            <p class="text-center">
+               <strong>Dandelion</strong> and all its components are released under the <a href="http://opensource.org/licenses/BSD-3-Clause">BSD 3-Clause</a> licence. More information <a href="http://www.tldrlegal.com/license/bsd-3-clause-license-(revised)">here</a>.
+            </p>
+         </div>
+      </div>
+   </div>
+</footer>
+   </div>
+   
+   <script src="//cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.min.js"></script>
+   <script src="/assets/js/site-main.js"></script>
+</body>
+</html>
